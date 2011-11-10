@@ -1,0 +1,25 @@
+/*= @group RESET
+---------------------------------------------------------------------- */
+/*
+  Based on normalize.css
+  http://html5boilerplate.com/docs/The-style/
+  http://necolas.github.com/normalize.css/
+*/
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-tap-highlight-color: $tap-highlight-color;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body { margin: 0; }
+
+/* Selections */
+/* Must be declared separately */
+::-moz-selection { background: $selection-background-color; color: $selection-color; text-shadow: none; }
+::selection { background: $selection-background-color; color: $selection-color; text-shadow: none; }
