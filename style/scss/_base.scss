@@ -1,0 +1,34 @@
+// Variables
+
+// Colour scheme. n.b., to avoid confusion with CSS properties,
+// colour scheme variables use american english 'color'
+
+$text-default-color         : #333;
+$background-color           : #fff;
+
+$link-default-color         : #000;
+$link-visited-color         : #000;
+$link-hover-color           : #666;
+$link-active-color          : #333;
+
+$pre-color                  : #d4d4d4;
+$pre-background-color       : #333;
+
+$selection-color            : #fff;
+$selection-background-color : #7b9bca;
+$tap-highlight-color        : #7b9bca;
+
+// Just some suggestions
+
+//$primary-color              : #2b306a;
+//$secondary-color            : #fef
+//$muted-color                : #eef;
+//$highlight-color            : #ff9600;
+//$note-color                 : #666;
+
+// Font stacks
+$display-family              : "Helvetica Neue", Helvetica, Arial, "Droid Sans", sans-serif; // Headings
+$caption-family              : sans-serif; // Small text, notes, captions etc.
+$sans-family                 : Verdana, sans-serif; // Generic sans-serif family
+$serif-family                : Georgia, "Droid Serif", serif; // Generic serif family
+$monospace-family            : "Meslo LG M DZ", "Menlo", "Bitstream Vera Sans", Monaco, "Andale Mono", "Lucida Console", "Droid Mono", monospace; // Monospace, code samples etc.
