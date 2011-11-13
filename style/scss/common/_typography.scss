@@ -1,0 +1,83 @@
+/*= @group TYPOGRAPHY
+---------------------------------------------------------------------- */
+
+/* Default context. This is ~= 16px over 21px line-height  */
+/* Change these values to suit your chosen typefaces */
+body { font: 100% / 1.3125 sans-serif; }
+
+
+  /*= @group FONT STACKS
+  ---------------------------------------------------------------------- */
+  // Variables defined in _base.scss
+
+
+  /* Default font stack */
+  body, select, input, textarea, button { font-family: $sans-family; }
+
+  /* Display font stack */
+  h1,h2,h3,h4,h5,h6 { font-family: $display-family; }
+
+  /* Alternate font stack (e.g., if using mainly sans-serif, maybe use a serif) */
+  blockquote, figcaption { font-family: $serif-family;  }
+
+  // /* Caption font stack, should be suitable for smaller sizes */
+  // [role=contentinfo] { font-family: $caption-family; }
+
+  /* Monospace font stack, for code samples and preformatted content */
+  pre, code, kbd, samp { font-family: $monospace-family; }
+
+
+  /*= @group TYPOGRAPHIC HEIRACHY
+  ---------------------------------------------------------------------- */
+
+  /* optimizeLegibility for main headings only */
+  /* Consider: http://www.aestheticallyloyal.com/public/optimize-legibility/ */
+  h1,h2,h3 { text-rendering: optimizeLegibility; }
+
+  /* Font weights and variants */
+  h1, h2, h3, h4, h5, h6  { font-style: normal; }
+  h1, h2, h3              { font-weight: 600; }
+  h4, h5, h6              { font-weight: normal; }
+  h5                      { text-transform: uppercase; }
+  h6                      { font-style: italic; }
+
+  // relative-size function is part of stitch compass plugin
+  // relative-size(desired,context)
+  //
+  // Default context should be 16px (body copy)
+  // Target margins should be multiples of the default line-height (should be equal to 21px)
+  // However, when the font-size is set this changes the context,
+  //   so we use this value in the relative-size function for the margin
+  //   e.g., h1 = 28px so margin = relative-size(21,28)
+  //
+  // More abstractly:
+  //   heading {
+  //     font-size: relative-size(desired, context) // context = parent element font-size
+  //     margin: relative-size(baseline,new-context) // baseline = multiple of our line-height (21px), new-context = desired
+  //     }
+  //  SCSS :
+  //  h2 {
+  //    font-size: relative-size(24,16);
+  //    margin: relative-size(21,24) 0 relative-size(7,24) 0;
+  //    }
+
+  h1 {
+    font-size: relative-size(28,16);
+    margin: 0 0 relative-size(21,28) 0;
+    }
+  h2 {
+    font-size: relative-size(21,16);
+    margin: relative-size(21,21) 0 relative-size(7,21) 0;
+    }
+  h3 {
+    font-size: relative-size(18,16);
+    margin: relative-size(21,18) 0 relative-size(7,18) 0;
+    }
+  h4 {
+    font-size: relative-size(17,16);
+    margin: relative-size(21,17) 0 relative-size(7,17) 0;
+    }
+  h5, h6 {
+    font-size: relative-size(14,16);
+    margin: relative-size(21,16) 0 relative-size(7,16) 0;
+    }
