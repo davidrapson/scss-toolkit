@@ -3,19 +3,22 @@
 // Colour scheme. n.b., to avoid confusion with CSS properties,
 // colour scheme variables use american english 'color'
 
-$text-default-color         : #333;
-$background-color           : #fff;
+$text-default-color         : #242424;
+$background-color           : #fefefe;
 
-$link-default-color         : #000;
-$link-visited-color         : #000;
-$link-hover-color           : #666;
-$link-active-color          : #333;
+$link-default-color         : #242424;
+$link-visited-color         : #444;
+$link-hover-color           : pink;
+$link-active-color          : yellow;
 
+$code-color                 : #333;
+$code-background-color      : #f3f3f3;
 $pre-color                  : #d4d4d4;
 $pre-background-color       : #333;
 
-$selection-color            : #fff;
-$selection-background-color : #7b9bca;
+
+$selection-color            : white;
+$selection-background-color : green;
 $tap-highlight-color        : rgb(0,0,0);
 
 // Just some suggestions
@@ -28,7 +31,7 @@ $tap-highlight-color        : rgb(0,0,0);
 
 // Font stacks
 $display-family    : "Helvetica Neue", Helvetica, Arial, sans-serif; // Headings
-$caption-family    : sans-serif; // Small text, notes, captions etc.
-$sans-family       : Verdana, sans-serif; // Generic sans-serif family
-$serif-family      : Georgia, "Droid Serif", serif; // Generic serif family
-$monospace-family  : "Meslo LG M DZ", "Menlo", "Bitstream Vera Sans", Monaco, "Andale Mono", "Lucida Console", "Droid Mono", monospace; // Monospace, code samples etc.
+$caption-family    : verdana, sans-serif; // Small text, notes, captions etc.
+$sans-family       : verdana, sans-serif; // Generic sans-serif family
+$serif-family      : georgia, serif; // Generic serif family
+$monospace-family  : "Menlo", "Bitstream Vera Sans", Monaco, "Andale Mono", "Lucida Console", "Droid Mono", monospace; // Monospace, code samples etc.
