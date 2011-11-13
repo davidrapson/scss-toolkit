@@ -13,7 +13,6 @@ audio:not([controls]) { display: none; }
 html {
   font-size: 100%;
   overflow-y: scroll;
-  -webkit-tap-highlight-color: $tap-highlight-color;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -21,5 +20,5 @@ body { margin: 0; }
 
 /* Selections */
 /* Must be declared separately */
-::-moz-selection { background: $selection-background-color; color: $selection-color; text-shadow: none; }
-::selection { background: $selection-background-color; color: $selection-color; text-shadow: none; }
+::-moz-selection { text-shadow: none; }
+::selection { text-shadow: none; }

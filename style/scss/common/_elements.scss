@@ -3,8 +3,8 @@
 
   /*= @group Links
   ---------------------------------------------------------------------- */
+  // Declared: Link, Visited, Hover, Active
 
-  // TODO move color declarations to _color
   a {
     margin: 0;
     padding: 0;
@@ -13,14 +13,13 @@
     background: transparent;
     }
   a:link {
-    color: $link-default-color;
     text-decoration: none;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 1px solid;
     }
 
-  a:visited   { color: $link-visited-color; }
-  a:hover     { color: $link-hover-color; border: none; }
-  a:active    { color: $link-active-color; }
+  a:visited   {  }
+  a:hover     { border: none; }
+  a:active    {  }
   a:focus     { outline: thin dotted; }
   a:hover,
   a:active    { outline: 0; }
@@ -92,16 +91,12 @@
 
   code  {
     padding: 0 0.2em;
-    background-color: #f3f3f3;
-    border: 1px solid #eee;
-    }
+  }
   pre, .code {
-    color: $pre-color;
-    background-color: $pre-background-color;
     margin-bottom: relative-size(21,16);
     padding: 1em relative-size(21,16);
     @include border-radius(5px);
-    }
+  }
   pre code, .code code { background-color: transparent; border: none; padding: 0; }
   .code li { list-style-type: decimal-leading-zero; }
 
