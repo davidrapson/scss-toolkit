@@ -1,0 +1,117 @@
+/*= @group ELEMENTS
+---------------------------------------------------------------------- */
+
+  /*= @group Links
+  ---------------------------------------------------------------------- */
+
+  // TODO move color declarations to _color
+  a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    }
+  a:link {
+    color: $link-default-color;
+    text-decoration: none;
+    border-bottom: 1px solid #bbb;
+    }
+
+  a:visited   { color: $link-visited-color; }
+  a:hover     { color: $link-hover-color; border: none; }
+  a:active    { color: $link-active-color; }
+  a:focus     { outline: thin dotted; }
+  a:hover,
+  a:active    { outline: 0; }
+
+  /*= @group Text Level Elements
+  ---------------------------------------------------------------------- */
+
+  /* Paragraphs */
+  p { margin: 0 0 relative-size(16,16) 0; }
+
+  /* Lists */
+  ul, ol, dl            { margin: 0 0 relative-size(21,16); padding: 0; }
+  ul ul, ol ol, dl dl   { margin-bottom: 0; }
+  ul li, ol li          { margin-left: relative-size(21,16); }
+  ul li                 { list-style: disc outside; }
+  ol li                 { list-style: outside decimal; }
+  ul li ul              { margin: 0.5em 0 0 1em; }
+  dl dt                 { font-weight: bold; }
+  dl dd                 { margin: 0 0 1em 0; }
+  nav ul, nav ol        { list-style: none; }
+
+  /* Text Marking */
+  ins, mark     { color: black; background-color:#ff9;} // TODO extract out to _color
+  ins           { text-decoration: none; }
+  mark          { font-style: italic; font-weight: bold; }
+  del           { text-decoration: line-through; }
+  b strong      { font-weight: bold; }
+
+  abbr { text-transform: lowercase; font-variant: small-caps; font-size: relative-size(21,16); }
+  abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+  /* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+  sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+  sup { top: -0.5em; }
+  sub { bottom: -0.25em; }
+
+
+  /*= @group Embeded Content
+  ---------------------------------------------------------------------- */
+
+  /* _width hack is for IE6 and below */
+  img, embed, object, video { max-width: 100%; _width: 100%; }
+  img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+  /* Correct overflow displayed oddly in IE9 */
+  svg:not(:root) { overflow: hidden; }
+
+  /*= @group FIGURES
+  ---------------------------------------------------------------------- */
+
+  figure { margin: 0; }
+  figcaption { font-style: italic; }
+
+  /*= @group QUOTES
+  ---------------------------------------------------------------------- */
+
+  q { quotes: none; }
+  q:before, q:after { content: ""; content: none; }
+  q, cite, blockquote { font-style: italic; }
+
+  blockquote {
+
+  }
+
+  /*= @group CODE
+  ---------------------------------------------------------------------- */
+
+  pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+  code  {
+    padding: 0 0.2em;
+    background-color: #f3f3f3;
+    border: 1px solid #eee;
+    }
+  pre, .code {
+    color: $pre-color;
+    background-color: $pre-background-color;
+    margin-bottom: relative-size(21,16);
+    padding: 1em relative-size(21,16);
+    @include border-radius(5px);
+    }
+  pre code, .code code { background-color: transparent; border: none; padding: 0; }
+  .code li { list-style-type: decimal-leading-zero; }
+
+
+  /*= @group TABLES
+  ---------------------------------------------------------------------- */
+
+  table { border-collapse: collapse; border-spacing: 0; }
+  td { vertical-align: top; }
+
+
+  /*= @group FORMS
+  ---------------------------------------------------------------------- */
