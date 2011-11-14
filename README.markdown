@@ -1,5 +1,7 @@
 # SCSS Toolkit
 
+Current version: **0.1**
+
 Personal starter toolkit for Sass (SCSS) projects.
 
 ## Requirements
