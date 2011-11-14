@@ -6,7 +6,7 @@
 # Plugin:   Stitch CSS
 # Web:      http://stitchcss.com/
 # Github:   https://github.com/anthonyshort/stitch-css
-require 'stitch'
+# require 'stitch'
 
 project_type      = :stand_alone # :stand_alone or :rails
 environment       = :development # :production or :development
