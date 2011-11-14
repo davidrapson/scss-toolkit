@@ -3,12 +3,11 @@
 // Relative Size
 // Based on the relative-size mixin from Stitch, http://stitchcss.com/
 // To use rems, pass in `rem` as the last parameter
-// Adds a conditional rem fall back in pixels
+// Adds a pixel fallback when using rem
 @function relative-size($target,$context,$unit:em) {
 
   // Based on
-  // http://www.stuffandnonsense.co.uk/blog/about/less
-  // and
+  // http://www.stuffandnonsense.co.uk/blog/about/less and
   // http://blog.typekit.com/2011/11/09/type-study-sizing-the-legible-letter/
   @if $unit == rem {
     font-size: $target * 1px;
