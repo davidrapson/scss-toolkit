@@ -6,28 +6,59 @@
 
   Hex Code    Colour Ref.     Example Usage
 
+  #ddd        Pale grey       Example
+
   Font Stacks
   ===========
 
+  Display Family: Helvetica Neue, Helvetica, Arial, sans-serif
 
 */
 
+
+// Plugins & Mixins
+// ================
+
+@import "compass/utilities";
+@import "compass/css3";
+@import "mixins/mixins";
+
+// Variables
+// Color scheme & font stacks
+// ==========================
+
 @import "base"; // <- Variables are defined here.
+
+// The Styles
+// ==========
+
+
+/*
+  Based on the recomendations in Adaptive Web Design, http://easy-readers.net/
+  Styles are defined in the following order:
+  - Reset
+  - Typography
+  - (Elements)*
+  - Layout
+  - Color
+
+  * N.B. Elements is mostly an extension of typography, very little layout
+*/
+
 
 @import "common/reset";
 @import "common/typography";
 @import "common/elements";
-@import "common/forms";
 
 @import "layout";
 
-// Not included by default
+// Color:
 // You'll want to set your color scheme variables
 // and adjust the values in this file before including it.
 // @import "common/color";
 
 @import "media/respond";
 
-@import "common/helpers"
+@import "common/helpers"; // <- Should come last out of screen styles (but before @media print)
 
 @import "media/print";

@@ -1,2 +1,16 @@
 /*= @group Layout
 ---------------------------------------------------------------------- */
+/*
+  From Adaptive Web Design, http://easy-readers.net/
+
+  The @media declaration ensures that every medium gets typography and colour styles,
+  but only mediums which implement `screen` get the layout styles.
+
+  This has the added benefit of being ignored by older browsers (e.g., Netscape 4),
+  so if for any reasons the site is viewed by legacy browsers they just get basic, but accessible, styling.
+*/
+@media screen {
+
+
+
+}
