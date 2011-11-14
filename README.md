@@ -14,28 +14,29 @@ Clone the git repo - `git clone git://github.com/davidrapson/scss-toolkit.git` o
 
 ## The Files
 
-    ├── README.md
-    ├── config.rb
-    └── style
-        └── scss
-            ├── _base.scss
-            ├── _layout.scss
-            ├── common
-            │   ├── _color.scss
-            │   ├── _elements.scss
-            │   ├── _helpers.scss
-            │   ├── _reset.scss
-            │   └── _typography.scss
-            ├── media
-            │   ├── _print.scss
-            │   └── _respond.scss
-            ├── mixins
-            │   └── _mixins.scss
-            └── style.scss
+    ├── README.md                        Um, you're reading it.
+    ├── config.rb                        Compass config file.
+    └── style                            [dir]
+        └── scss                         [dir]
+            ├── _base.scss               Variables, color scheme and font stacks.
+            ├── _layout.scss             User defined layout styles (empty file).
+            ├── common                   [dir]
+            │   ├── _color.scss          All color definitions.
+            │   ├── _elements.scss       Basic element styles (text level, tables, forms etc.)
+            │   ├── _helpers.scss        H5BP non-semantic helpers (clearfix etc.)
+            │   ├── _reset.scss          Normalise.css reset styles.
+            │   └── _typography.scss     Typographic heirachy, mainly font stacks and headings.
+            ├── media                    [dir]
+            │   ├── _print.scss          Print styles.
+            │   └── _respond.scss        @media, responsive / adaptive styles (empty file)
+            ├── mixins                   [dir]
+            │   └── _mixins.scss         SCSS mixins, current only `relative-size`.
+            └── style.scss               Primary stylesheet, contains all `@import`s.
 
 ## Thanks & Resources
 
 This toolkit is based on the work of the following fine people & projects.
 
 - [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate)
+- [Normalise.css](http://necolas.github.com/normalize.css/)
 - [Adaptive Web Design (book)](http://easy-readers.net/)
