@@ -12,7 +12,7 @@ WIP, current version: **0.1**
 
 ## Quick Start
 
-Clone the git repo - `git://github.com/davidrapson/scss-toolkit.git` or [download it](https://github.com/davidrapson/scss-toolkit/zipball/master)
+Clone the git repo - `git clone git://github.com/davidrapson/scss-toolkit.git` or [download it](https://github.com/davidrapson/scss-toolkit/zipball/master)
 
 ## Thanks & Resources
 
