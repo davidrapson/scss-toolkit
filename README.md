@@ -2,7 +2,7 @@
 
 Personal starter toolkit for Sass (SCSS) projects.
 
-WIP, current version: **0.1**
+WIP, current version: **0.2**
 
 ## Requirements
 
