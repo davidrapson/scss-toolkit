@@ -1,4 +1,12 @@
+// Mixins
+
+// Relative Size
 // From Stitch, http://stitchcss.com/
-@function relative-size($size,$context,$unit:em) {
-  @return #{$size/$context}$unit;
+// To use rems, pass in `rem` as the last parameter
+@function relative-size($target,$context,$unit:em) {
+
+  // Desired font-size ÷ font-size of containing element, or more succinctly:
+  // target ÷ context = result
+  @return #{$target/$context}$unit;
+
 }
