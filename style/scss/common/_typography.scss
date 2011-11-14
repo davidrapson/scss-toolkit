@@ -41,25 +41,19 @@ body { font: 100% / 1.3125 sans-serif; }
   h5                      { text-transform: uppercase; }
   h6                      { font-style: italic; }
 
-  // relative-size function is part of stitch compass plugin
-  // relative-size(desired,context)
+  // Desired font-size ÷ font-size of containing element, or more succinctly:
+  // target ÷ context = result
   //
-  // Default context should be 16px (body copy)
-  // Target margins should be multiples of the default line-height (should be equal to 21px)
-  // However, when the font-size is set this changes the context,
-  //   so we use this value in the relative-size function for the margin
-  //   e.g., h1 = 28px so margin = relative-size(21,28)
+  // This can be used for font-sizes or even line-heights and margins
+  // Take the following example:
   //
-  // More abstractly:
-  //   heading {
-  //     font-size: relative-size(desired, context) // context = parent element font-size
-  //     margin: relative-size(baseline,new-context) // baseline = multiple of our line-height (21px), new-context = desired
-  //     }
-  //  SCSS :
-  //  h2 {
-  //    font-size: relative-size(24,16);
-  //    margin: relative-size(21,24) 0 relative-size(7,24) 0;
-  //    }
+  // h2 {
+  //   font-size: relative-size(24,16);
+  //   margin: relative-size(21,24) 0 relative-size(7,24) 0;
+  // }
+  //
+  // Font size: relative-size(24,16) where 16 is the font-size of our containing element (in this case the <body>)
+  // Margin: relative-size(21,28) where 21 is our desired line-height and 28 is the font-size of our containing element (in this case the <h2>)
 
   h1 {
     font-size: relative-size(28,16);
