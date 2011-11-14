@@ -1,16 +1,40 @@
 # SCSS Toolkit
 
-Personal starter toolkit for Sass (SCSS) projects. This project currently only supports the SCSS syntax.
+Personal starter toolkit for Sass (SCSS) projects.
 
-Current version: **0.2**
+WIP, current version: **0.2**
 
 ## Requirements
 
-As this is a Sass / SCSS toolkit it assumes you already have [Ruby](http://www.ruby-lang.org/en/) and [Sass](http://sass-lang.com/) setup. The only other requirment is [Compass](http://compass-style.org/).
+As this is a Sass / SCSS toolkit it assumes you already have Ruby and [Sass](http://sass-lang.com/) setup.
+
+* [Compass](http://compass-style.org/)
+* <del>[Stitch](http://stitchcss.com/) A CSS Pattern Framework for Compass (compass plugin)</del>
 
 ## Quick Start
 
 Clone the git repo - `git clone git://github.com/davidrapson/scss-toolkit.git` or [download it](https://github.com/davidrapson/scss-toolkit/zipball/master)
+
+## The Files
+
+    ├── README.md
+    ├── config.rb
+    └── style
+        └── scss
+            ├── _base.scss
+            ├── _layout.scss
+            ├── common
+            │   ├── _color.scss
+            │   ├── _elements.scss
+            │   ├── _helpers.scss
+            │   ├── _reset.scss
+            │   └── _typography.scss
+            ├── media
+            │   ├── _print.scss
+            │   └── _respond.scss
+            ├── mixins
+            │   └── _mixins.scss
+            └── style.scss
 
 ## Thanks & Resources
 
