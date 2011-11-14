@@ -1,21 +1,6 @@
 @charset "UTF-8";
-/*
-  SCSS TOOLKIT by DAVID RAPSON
 
-  Colour Scheme
-  =============
-
-  Hex Code    Colour Ref.     Example Usage
-
-  #ddd        Pale grey       Example
-
-  Font Stacks
-  ===========
-
-  Display Family: Helvetica Neue, Helvetica, Arial, sans-serif
-
-*/
-
+/* SCSS TOOLKIT by DAVID RAPSON */
 
 // Plugins & Mixins
 // ================
@@ -28,35 +13,41 @@
 // Color scheme & font stacks
 // ==========================
 
-@import "base"; // <- Variables are defined here.
+@import "variables";
+
 
 // The Styles
 // ==========
 
-
 /*
-  Based on the recomendations in Adaptive Web Design, http://easy-readers.net/
-  Styles are defined in the following order:
+  Uses a combination of recomendations from Adaptive Web Design, http://easy-readers.net/
+  and Scalable and Modular Architecture for CSS (SMACSS) http://smacss.com/book
+
+  Styles are defined in the following groupings:
+
   - Reset
   - Typography
-  - (Elements)*
+  - Elements
   - Layout
+  - Module
+  - State
   - Color
 
-  * N.B. Elements is mostly an extension of typography, very little layout
+  In SMACSS terms, reset + typography + elements = "Base" styles
 */
 
 
+// Base or common styles
 @import "common/reset";
 @import "common/typography";
 @import "common/elements";
 
-@import "layout";
+// Layout
+@import "layout";   // Major components, e.g., header, footer etc.
+@import "module";   // Minor components, e.g., navigation bar, callout, widgets etc.
+@import "state";    // A state is something that augments + overrides all other styles, e.g., success or error state
 
-// Color:
-// You'll want to set your color scheme variables
-// and adjust the values in this file before including it.
-// @import "common/color";
+// @import "common/color"; // <- You'll want to set your color scheme variables and adjust the values in this file before including it.
 
 @import "media/respond";
 
