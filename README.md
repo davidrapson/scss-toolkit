@@ -1,14 +1,12 @@
 # SCSS Toolkit
 
-Personal starter toolkit for Sass (SCSS) projects.
+Personal starter toolkit for Sass (SCSS) projects. This project currently only supports the SCSS syntax.
 
-WIP, current version: **0.2**
+Current version: **0.2**
 
 ## Requirements
 
-* [Sass](http://sass-lang.com/) (Obviously)
-* [Compass](http://compass-style.org/)
-* <del>[Stitch](http://stitchcss.com/) A CSS Pattern Framework for Compass (compass plugin)</del>
+As this is a Sass / SCSS toolkit it assumes you already have [Ruby](http://www.ruby-lang.org/en/) and [Sass](http://sass-lang.com/) setup. The only other requirment is [Compass](http://compass-style.org/).
 
 ## Quick Start
 
