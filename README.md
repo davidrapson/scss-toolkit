@@ -6,10 +6,7 @@ WIP, current version: **0.2**
 
 ## Requirements
 
-As this is a Sass / SCSS toolkit it assumes you already have Ruby and [Sass](http://sass-lang.com/) setup.
-
-* [Compass](http://compass-style.org/)
-* <del>[Stitch](http://stitchcss.com/) A CSS Pattern Framework for Compass (compass plugin)</del>
+As this is a Sass / SCSS toolkit it assumes you already have Ruby and [Sass](http://sass-lang.com/) setup. Otherwise the only real requirement is [Compass](http://compass-style.org/).
 
 ## Quick Start
 
