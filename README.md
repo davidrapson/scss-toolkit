@@ -40,3 +40,4 @@ This toolkit is based on the work of the following fine people & projects.
 - [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate)
 - [Normalise.css](http://necolas.github.com/normalize.css/)
 - [Adaptive Web Design (book)](http://easy-readers.net/)
+- [Scalable and Modular Architecture for CSS](http://smacss.com/book/type-state) (<abbr title="Scalable and Modular Architecture for CSS">SMACSS</abbr>)
