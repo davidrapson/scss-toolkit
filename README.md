@@ -2,7 +2,14 @@
 
 Personal starter toolkit for Sass (SCSS) projects.
 
-Current version: **0.3**
+Current version: **0.4**
+
+## Changelog
+
+- **0.4.0 Big changes to the directory structure, SMACSS terminology; see "Thanks & Resources"**.
+- 0.3.0 First fully working toolkit
+- 0.2.0 Basic file and directory structure
+- 0.1.0 Initial commit
 
 ## Requirements
 
