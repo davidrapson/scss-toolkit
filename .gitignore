@@ -1,4 +1,6 @@
 *.orig
 .DS_Store
 .sass-cache
+Rakefile
+demo/
 logs/
