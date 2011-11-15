@@ -16,7 +16,7 @@ Clone the git repo - `git clone git://github.com/davidrapson/scss-toolkit.git` o
 
 There are now a separate [demo branch](https://github.com/davidrapson/scss-toolkit/tree/demo) which has a compiled version of the toolkit files with a few basic layout styles to show you what the defaults look like.
 
-TODO Put demo files up at a dedicated URL.
+**Live Demo**: You can also view a live demo at [http://davidrapson.co.uk/projects/scss-toolkit/]()
 
 ## The Files
 
