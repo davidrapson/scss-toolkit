@@ -2,17 +2,18 @@
 
 /* SCSS TOOLKIT by DAVID RAPSON */
 
-// Plugins & Mixins
-// ================
+// Plugins
+// =======
 
 @import "compass/utilities";
 @import "compass/css3";
-@import "mixins/mixins";
 
-// Variables
+
+// Variables & Mixins
+// ==================
 // Color scheme & font stacks
-// ==========================
 
+@import "mixins";
 @import "variables";
 
 
@@ -43,9 +44,9 @@
 @import "common/elements";
 
 // Layout
-@import "layout";   // Major components, e.g., header, footer etc.
-@import "module";   // Minor components, e.g., navigation bar, callout, widgets etc.
-@import "state";    // A state is something that augments + overrides all other styles, e.g., success or error state
+@import "components/layout";   // Major components, e.g., header, footer etc.
+@import "components/module";   // Minor components, e.g., navigation bar, callout, widgets etc.
+@import "components/state";    // A state is something that augments + overrides all other styles, e.g., success or error state
 
 // @import "common/color"; // <- You'll want to set your color scheme variables and adjust the values in this file before including it.
 
