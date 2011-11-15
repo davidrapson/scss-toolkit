@@ -6,13 +6,6 @@
 // Adds a pixel fallback when using rem
 @function relative-size($target,$context,$unit:em) {
 
-  // Based on
-  // http://www.stuffandnonsense.co.uk/blog/about/less and
-  // http://blog.typekit.com/2011/11/09/type-study-sizing-the-legible-letter/
-  @if $unit == rem {
-    @return $target * 1px;
-  }
-
   // Desired font-size ÷ font-size of containing element, or more succinctly:
   // target ÷ context = result
   @return #{$target/$context}$unit;
