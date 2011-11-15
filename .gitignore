@@ -1,4 +1,5 @@
 *.orig
 .DS_Store
 .sass-cache
+demo/
 logs/
