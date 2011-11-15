@@ -21,8 +21,8 @@
   a:active    { color: $link-active-color;  }
 
   code {
-    $code-color;
-    $code-background-color;
+    color: $code-color;
+    background-color: ;$code-background-color;
   }
   pre, .code {
     color: $pre-color;
@@ -35,7 +35,7 @@
 
   // Just some examples
 
-  //  h1, h2, h3, h4 { color: $primary-color; }
-  //  h5, h6 { $secondary-color }
-  //  abbr[title], dfn[title] { border-color: $highlight-color; }
+  // h1, h2, h3, h4, h5, h6 { color: $primary-color; }
+  // h5, h6 { $secondary-color }
+  // abbr[title], dfn[title] { border-color: $highlight-color; }
 
