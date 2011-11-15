@@ -2,11 +2,26 @@
 
 Personal starter toolkit for Sass (SCSS) projects.
 
-Current version: **0.4**
+SCSS Toolkit uses a combination of recommendations from Adaptive Web Design, http://easy-readers.net/
+and Scalable and Modular Architecture for CSS (SMACSS), see [http://smacss.com/book](). 
+*In SMACSS terms, reset + typography + elements = "Base" styles*
+
+Styles are broken down into the following groups:
+
+- Reset
+- Typography
+- Elements
+- Layout
+- Module
+- State
+- Color
+
+
 
 ## Changelog
 
-- **0.4.0 Big changes to the directory structure, SMACSS terminology; see "Thanks & Resources"**.
+- **0.4.5 SMACSS inspired file structure added to the README**
+- 0.4.0 Big changes to the directory structure, SMACSS terminology; see "Thanks & Resources"
 - 0.3.0 First fully working toolkit
 - 0.2.0 Basic file and directory structure
 - 0.1.0 Initial commit
@@ -27,24 +42,29 @@ There are now a separate [demo branch](https://github.com/davidrapson/scss-toolk
 
 ## The Files
 
-    ├── README.md                        Um, you're reading it.
-    ├── config.rb                        Compass config file.
-    └── style                            [dir]
-        └── scss                         [dir]
-            ├── _base.scss               Variables, color scheme and font stacks.
-            ├── _layout.scss             User defined layout styles (empty file).
-            ├── common                   [dir]
-            │   ├── _color.scss          All color definitions.
-            │   ├── _elements.scss       Basic element styles (text level, tables, forms etc.)
-            │   ├── _helpers.scss        H5BP non-semantic helpers (clearfix etc.)
-            │   ├── _reset.scss          Normalise.css reset styles.
-            │   └── _typography.scss     Typographic heirachy, mainly font stacks and headings.
-            ├── media                    [dir]
-            │   ├── _print.scss          Print styles.
-            │   └── _respond.scss        @media, responsive / adaptive styles (empty file)
-            ├── mixins                   [dir]
-            │   └── _mixins.scss         SCSS mixins, current only `relative-size`.
-            └── style.scss               Primary stylesheet, contains all `@import`s.
+    ├── README.md                         You're reading it
+    ├── config.rb                         Compass config file
+    └── style                             [dir]
+        └── scss
+            ├── _functions.scss           Sass mixins, current only `relative-size`
+            ├── _mixins.scss              Sass mixins (empty file)
+            ├── _variables.scss           Variables, color scheme and font stacks
+            ├── common                    [dir]
+            │   ├── _color.scss           All color definitions
+            │   ├── _elements.scss        Basic element styles, e.g., text level, tables, forms
+            │   ├── _helpers.scss         Non-semantic helpers, e.g., clearfix etc. (from HTML5 Boilerplate)
+            │   ├── _reset.scss           Reset styles (based on Normalise.css + H5BP)
+            │   └── _typography.scss      Typographic heirachy, mainly font stacks and heading declarations
+            ├── components                [dir]
+            │   ├── _layout.scss          Major components, e.g., header, footer etc.
+            │   ├── _module.scss          Minor components, e.g., navigation bar, callout, widgets etc.
+            │   └── _state.scss           A state is something that augments + overrides all other styles, e.g., success or error states
+            ├── media                     [dir]
+            │   ├── _print.scss           Print styles
+            │   └── _respond.scss         @media, responsive / adaptive styles (empty file)
+            └── style.scss                Primary stylesheet, contains all `@import`s.
+    
+    5 directories, 16 files
 
 ## Thanks & Resources
 
