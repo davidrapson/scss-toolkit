@@ -9,12 +9,12 @@
 @import "compass/css3";
 
 
-// Variables & Mixins
-// ==================
-// Color scheme & font stacks
+// Sass Features
+// =============
 
+@import "variables"; // Color scheme & font stacks
+@import "functions";
 @import "mixins";
-@import "variables";
 
 
 // The Styles
