@@ -46,7 +46,7 @@
   ins           { text-decoration: none; }
   mark          { font-style: italic; font-weight: bold; }
   del           { text-decoration: line-through; }
-  b strong      { font-weight: bold; }
+  b, strong     { font-weight: bold; }
 
   abbr { text-transform: lowercase; font-variant: small-caps; font-size: relative-size(21,16); }
   abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
