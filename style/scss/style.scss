@@ -1,21 +1,15 @@
 @charset "UTF-8";
-
 /* SCSS TOOLKIT by DAVID RAPSON */
 
 // Plugins
 // =======
 
-@import "compass/utilities";
-@import "compass/css3";
-
+@import "compass/utilities", "compass/css3";
 
 // Sass Features
 // =============
 
-@import "variables"; // Color scheme & font stacks
-@import "functions";
-@import "mixins";
-
+@import "variables", "functions", "mixins";
 
 // The Styles
 // ==========
@@ -39,14 +33,13 @@
 
 
 // Base or common styles
-@import "common/reset";
-@import "common/typography";
-@import "common/elements";
+@import "common/reset", "common/typography", "common/elements";
 
 // Layout
-@import "components/layout";   // Major components, e.g., header, footer etc.
-@import "components/module";   // Minor components, e.g., navigation bar, callout, widgets etc.
-@import "components/state";    // A state is something that augments + overrides all other styles, e.g., success or error state
+//   Layout = major components, e.g., header, footer etc.
+//   Module = minor components, e.g., navigation bar, callout, widgets etc.
+//   State  = a state is something that augments + overrides all other styles, e.g., success or error state
+@import "components/layout", "components/module", "components/state";
 
 // @import "common/color"; // <- You'll want to set your color scheme variables and adjust the values in this file before including it.
 
