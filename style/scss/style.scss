@@ -29,7 +29,6 @@
 //
 // In SMACSS terms, reset + typography + elements = "Base" styles
 
-
 // Base or common styles
 @import "common/reset", "common/typography", "common/elements";
 
@@ -42,7 +41,5 @@
 // @import "common/color"; // <- You'll want to set your color scheme variables and adjust the values in this file before including it.
 
 @import "media/respond";
-
 @import "common/helpers"; // <- Should come last out of screen styles (but before @media print)
-
 @import "media/print";
