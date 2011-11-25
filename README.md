@@ -76,6 +76,16 @@ There are now a separate [demo branch](https://github.com/davidrapson/scss-toolk
     
     5 directories, 16 files
 
+## License
+
+### Major components:
+
+- Normalize.css: Public Domain
+
+### Everything else:
+
+The Unlicense (aka: public domain)
+
 ## Thanks & Resources
 
 This toolkit is based on the work of the following fine people & projects.
