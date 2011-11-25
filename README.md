@@ -17,14 +17,24 @@ Styles are broken down into the following groups:
 - Color
 
 
-
 ## Changelog
 
-- **0.4.5 SMACSS inspired file structure added to the README**
+- **0.5.0** Full expansion of SMACSS concept plus quality check of all current styles
+- 0.4.5 SMACSS inspired file structure added to the README
 - 0.4.0 Big changes to the directory structure, SMACSS terminology; see "Thanks & Resources"
 - 0.3.0 First fully working toolkit
 - 0.2.0 Basic file and directory structure
 - 0.1.0 Initial commit
+
+### TODO
+
+While SCSS Toolkit is fairly stable at the moment there are a few key things that need adding, hence no v1.0:
+
+- Default form styles.
+- Sample layout styles? I don't really want to assume anything about layout.
+- Common @media breakpoints? Perhaps based on 320andUp?
+- Improve credits. Individual credits not clear enough. 
+
 
 ## Requirements
 
