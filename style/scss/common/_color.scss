@@ -29,12 +29,11 @@
     background-color: $pre-background-color;
   }
 
-
   /*= @group Common
   ---------------------------------------------------------------------- */
 
+  body { color: $text-color; background-color: $background-color; }
   // Just some examples
-
   // h1, h2, h3, h4, h5, h6 { color: $primary-color; }
   // h5, h6 { $secondary-color }
   // abbr[title], dfn[title] { border-color: $highlight-color; }

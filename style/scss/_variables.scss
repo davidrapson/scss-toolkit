@@ -3,7 +3,8 @@
 // Colour scheme. n.b., to avoid confusion with CSS properties,
 // colour scheme variables use american english 'color'
 
-$text-default-color         : #242424;
+// Common Colours
+$text-color                 : #242424;
 $background-color           : #fefefe;
 
 $link-default-color         : #242424;
@@ -22,7 +23,7 @@ $selection-background-color : green;
 $tap-highlight-color        : rgb(0,0,0);
 
 // Just some suggestions
-
+// Main Colour Palette
 //$primary-color              : #2b306a;
 //$secondary-color            : #fef;
 //$muted-color                : #eef;
