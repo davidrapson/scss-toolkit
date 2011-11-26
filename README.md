@@ -19,7 +19,8 @@ Styles are broken down into the following groups:
 
 ## Changelog
 
-- **0.5.0** Full expansion of SMACSS concept plus quality check of all current styles
+- **0.5.1** Demo moved to a separate github rept
+- 0.5.0 Full expansion of SMACSS concept plus quality check of all current styles
 - 0.4.5 SMACSS inspired file structure added to the README
 - 0.4.0 Big changes to the directory structure, SMACSS terminology; see "Thanks & Resources"
 - 0.3.0 First fully working toolkit
@@ -46,9 +47,10 @@ Clone the git repo - `git clone git://github.com/davidrapson/scss-toolkit.git` o
 
 ## Demo
 
-There are now a separate [demo branch](https://github.com/davidrapson/scss-toolkit/tree/demo) which has a compiled version of the toolkit files with a few basic layout styles to show you what the defaults look like.
+There demo files now live in a [separate github repo](https://github.com/davidrapson/scss-toolkit/tree/demo) which has a compiled version of the toolkit files with a few basic layout styles to show you what the defaults look like. 
 
-**Live Demo**: You can also view a live demo at [http://davidrapson.co.uk/projects/scss-toolkit/]()
+- **Demo Repo**: [https://github.com/davidrapson/scss-toolkit-demo]()
+- **Live Demo**: [http://davidrapson.co.uk/projects/scss-toolkit/]()
 
 ## The Files
 
