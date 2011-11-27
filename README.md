@@ -1,6 +1,6 @@
 # SCSS Toolkit
 
-Personal starter toolkit for Sass (SCSS) projects.
+Personal starter toolkit for Sass (SCSS) & Compass projects.
 
 SCSS Toolkit uses a combination of recommendations from Adaptive Web Design, http://easy-readers.net/
 and Scalable and Modular Architecture for CSS (SMACSS), see [http://smacss.com/book](). 
@@ -14,12 +14,13 @@ Styles are broken down into the following groups:
 - Layout
 - Module
 - State
-- Color
+- Colo(u)r
 
 
 ## Changelog
 
-- **0.5.1** Demo moved to a separate github rept
+- **0.6.0** Added default form styles from HTML5 Boilerplate
+- 0.5.1 Demo moved to a separate Github repo
 - 0.5.0 Full expansion of SMACSS concept plus quality check of all current styles
 - 0.4.5 SMACSS inspired file structure added to the README
 - 0.4.0 Big changes to the directory structure, SMACSS terminology; see "Thanks & Resources"
@@ -31,7 +32,7 @@ Styles are broken down into the following groups:
 
 While SCSS Toolkit is fairly stable at the moment there are a few key things that need adding, hence no v1.0:
 
-- Default form styles.
+- <del>Default form styles</del>. @done
 - Sample layout styles? I don't really want to assume anything about layout.
 - Common @media breakpoints? Perhaps based on 320andUp?
 - Improve credits. Individual credits not clear enough. 
@@ -39,7 +40,7 @@ While SCSS Toolkit is fairly stable at the moment there are a few key things tha
 
 ## Requirements
 
-As this is a Sass / SCSS toolkit it assumes you already have Ruby and [Sass](http://sass-lang.com/) setup. Otherwise the only real requirement is [Compass](http://compass-style.org/).
+As this is a Sass / SCSS toolkit it assumes you already have Ruby and [Sass](http://sass-lang.com/) setup. Otherwise the only real requirement is [Compass](http://compass-style.org/), which you're using already right?
 
 ## Quick Start
 
@@ -57,7 +58,7 @@ The demo files now live in a [separate github repo](https://github.com/davidraps
     ├── README.md                         You're reading it
     ├── config.rb                         Compass config file
     └── style                             [dir]
-        └── scss
+        └── scss                          [dir]
             ├── _functions.scss           Sass mixins, current only `relative-size`
             ├── _mixins.scss              Sass mixins (empty file)
             ├── _variables.scss           Variables, color scheme and font stacks
@@ -94,5 +95,5 @@ This toolkit is based on the work of the following fine people & projects.
 
 - [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate)
 - [Normalise.css](http://necolas.github.com/normalize.css/)
-- [Adaptive Web Design (book)](http://easy-readers.net/)
 - [Scalable and Modular Architecture for CSS](http://smacss.com/book/type-state) (<abbr title="Scalable and Modular Architecture for CSS">SMACSS</abbr>)
+- [Adaptive Web Design (book)](http://easy-readers.net/)
