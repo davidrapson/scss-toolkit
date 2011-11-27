@@ -36,6 +36,10 @@
     background-color: $pre-background-color;
   }
 
+  /* Colors for form validity */
+  input:valid, textarea:valid { background-color: $success-color; }
+  input:invalid, textarea:invalid { background-color: $error-color; }
+
   // Just some examples
   // h1, h2, h3, h4, h5, h6 { color: $primary-color; }
   // h5, h6 { $secondary-color }
