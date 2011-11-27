@@ -1,16 +1,23 @@
 /*= @group Color
 ---------------------------------------------------------------------- */
 
-  /*= @group Unique
+  /*= @group Common
   ---------------------------------------------------------------------- */
-  // Elements which have mostly unique color values, e.g., links, selections, code
 
   html { -webkit-tap-highlight-color: $tap-highlight-color; }
+  body { color: $text-color; background-color: $background-color; }
 
   /* Selections */
   /* Must be declared separately */
-  ::-moz-selection { background: $selection-background-color; color: $selection-color; }
-  ::selection { background: $selection-background-color; color: $selection-color; }
+  // Is there a better way to do this
+  @each $prefix in "::-moz-selection", "::selection" {
+    #{$prefix} {
+      color: $selection-color;
+      background: $selection-background-color;
+    }
+  }
+
+  ins, mark { background-color: $highlight-color; }
 
   a:link {
     color: $link-default-color;
@@ -29,14 +36,11 @@
     background-color: $pre-background-color;
   }
 
-  /*= @group Common
-  ---------------------------------------------------------------------- */
-
-  body { color: $text-color; background-color: $background-color; }
   // Just some examples
   // h1, h2, h3, h4, h5, h6 { color: $primary-color; }
   // h5, h6 { $secondary-color }
   // abbr[title], dfn[title] { border-color: $highlight-color; }
+
 
   /*= @group Layout
   ---------------------------------------------------------------------- */

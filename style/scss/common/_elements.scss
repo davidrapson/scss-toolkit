@@ -1,9 +1,10 @@
 /*= @group ELEMENTS
 ---------------------------------------------------------------------- */
+// Element styles based on HTML5 Boilerplate
 
   /*= @group Links
   ---------------------------------------------------------------------- */
-  // Declared: Link, Visited, Hover, Active
+  // Declared: link, visited, hover, active
 
   a {
     margin: 0;
@@ -42,7 +43,6 @@
   nav ul, nav ol        { list-style: none; }
 
   /* Text Marking */
-  ins, mark     { color: black; background-color:#ff9;} // TODO extract out to _color
   ins           { text-decoration: none; }
   mark          { font-style: italic; font-weight: bold; }
   del           { text-decoration: line-through; }
