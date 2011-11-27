@@ -20,5 +20,6 @@ body { margin: 0; }
 
 /* Selections */
 /* Must be declared separately */
-::-moz-selection { text-shadow: none; }
-::selection { text-shadow: none; }
+@each $prefix in "::-moz-selection", "::selection" {
+  #{$prefix} { text-shadow: none; }
+}
