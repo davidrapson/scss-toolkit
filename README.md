@@ -3,7 +3,7 @@
 Personal starter toolkit for Sass (SCSS) & Compass projects.
 
 SCSS Toolkit uses a combination of recommendations from Adaptive Web Design, http://easy-readers.net/
-and Scalable and Modular Architecture for CSS (SMACSS), see [http://smacss.com/book](). 
+and Scalable and Modular Architecture for CSS (SMACSS, pronounced “smacks”), see [http://smacss.com/book](). 
 *In SMACSS terms, reset + typography + elements = "Base" styles*
 
 Styles are broken down into the following groups:
@@ -18,6 +18,8 @@ Styles are broken down into the following groups:
 
 
 ## Changelog
+
+Aside from the naughty **0.4.5** tag this project attempts to adhere to the [Semantic Versioning Specification](http://semver.org/) as much as possible.
 
 - **0.6.0** Added default form styles from HTML5 Boilerplate
 - 0.5.1 Demo moved to a separate Github repo
