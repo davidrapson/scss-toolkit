@@ -2,5 +2,6 @@
 .DS_Store
 .sass-cache
 Rakefile
+style/style.css
 demo/
 logs/
