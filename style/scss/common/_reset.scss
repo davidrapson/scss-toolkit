@@ -13,7 +13,7 @@ audio:not([controls]) { display: none; }
 html {
   font-size: 100%;
   overflow-y: scroll;
-  @each $prefix in webkit, ms { -#{$prefix}-text-size-adjust: 100%; }
+  @each $prefix in webkit, ms { .#{$prefix}-text-size-adjust: 100%; }
 }
 body { margin: 0; }
 
