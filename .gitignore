@@ -1,4 +1,5 @@
 *.orig
+*.swap
 .DS_Store
 .sass-cache
 Rakefile
