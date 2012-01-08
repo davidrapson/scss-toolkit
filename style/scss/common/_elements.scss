@@ -12,11 +12,11 @@
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
-    }
+  }
   a:link {
     text-decoration: none;
     border-bottom: 1px solid;
-    }
+  }
 
   a:visited   {  }
   a:hover     { border: none; }
@@ -129,6 +129,7 @@
 
   // 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
   button, input { line-height: normal; }
+
 
   // 1. Display hand cursor for clickable form elements
   // 2. Allow styling of clickable form elements in iOS
