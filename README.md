@@ -21,7 +21,8 @@ Styles are broken down into the following groups:
 
 Aside from the naughty **0.4.5** tag this project attempts to adhere to the [Semantic Versioning Specification](http://semver.org/) as much as possible.
 
-- **0.6.0** Added default form styles from HTML5 Boilerplate
+- **0.6.1** Moved `@media screen` declaration into main style.scss
+- 0.6.0 Added default form styles from HTML5 Boilerplate
 - 0.5.1 Demo moved to a separate Github repo
 - 0.5.0 Full expansion of SMACSS concept plus quality check of all current styles
 - 0.4.5 SMACSS inspired file structure added to the README
