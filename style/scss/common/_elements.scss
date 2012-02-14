@@ -95,7 +95,6 @@
   pre, .code {
     margin-bottom: relative-size(21,16);
     padding: 1em relative-size(21,16);
-    @include border-radius(5px);
   }
   pre code, .code code { background-color: transparent; border: none; padding: 0; }
   .code li { list-style-type: decimal-leading-zero; }
