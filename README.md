@@ -21,7 +21,8 @@ Styles are broken down into the following groups:
 
 Aside from the naughty **0.4.5** tag this project attempts to adhere to the [Semantic Versioning Specification](http://semver.org/) as much as possible.
 
-- **0.6.1** Moved `@media screen` declaration into main style.scss
+- **0.7.0** Made Compass optional
+- 0.6.1 Moved `@media screen` declaration into main style.scss
 - 0.6.0 Added default form styles from HTML5 Boilerplate
 - 0.5.1 Demo moved to a separate Github repo
 - 0.5.0 Full expansion of SMACSS concept plus quality check of all current styles
@@ -38,12 +39,15 @@ While SCSS Toolkit is fairly stable at the moment there are a few key things tha
 - <del>Default form styles</del>. @done
 - Sample layout styles? I don't really want to assume anything about layout.
 - Common @media breakpoints? Perhaps based on 320andUp?
-- Improve credits. Individual credits not clear enough. 
-
 
 ## Requirements
 
-As this is a Sass / SCSS toolkit it assumes you already have Ruby and [Sass](http://sass-lang.com/) setup. Otherwise the only real requirement is [Compass](http://compass-style.org/), which you're using already right?
+As this is a Sass / SCSS toolkit it assumes you already have Ruby and [Sass](http://sass-lang.com/) setup. 
+
+### Compass
+
+I use [Compass](http://compass-style.org/) for all my projects so I've included a `config.rb` file, but it's completely optional. **SCSS Toolkit does not rely on Compass**.
+
 
 ## Quick Start
 
@@ -59,7 +63,7 @@ The demo files now live in a [separate github repo](https://github.com/davidraps
 ## The Files
 
     ├── README.md                         You're reading it
-    ├── config.rb                         Compass config file
+    ├── config.rb                         Compass config file (optional)
     └── style                             [dir]
         └── scss                          [dir]
             ├── _functions.scss           Sass mixins, current only `relative-size`
