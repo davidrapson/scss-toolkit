@@ -32,14 +32,6 @@ Aside from the naughty **0.4.5** tag this project attempts to adhere to the [Sem
 - 0.2.0 Basic file and directory structure
 - 0.1.0 Initial commit
 
-### TODO
-
-While SCSS Toolkit is fairly stable at the moment there are a few key things that need adding, hence no v1.0:
-
-- <del>Default form styles</del>. @done
-- Sample layout styles? I don't really want to assume anything about layout.
-- Common @media breakpoints? Perhaps based on 320andUp?
-
 ## Requirements
 
 As this is a Sass / SCSS toolkit it assumes you already have Ruby and [Sass](http://sass-lang.com/) setup. 
