@@ -6,15 +6,7 @@ SCSS Toolkit uses a combination of recommendations from Adaptive Web Design, htt
 and Scalable and Modular Architecture for CSS (SMACSS, pronounced “smacks”), see [http://smacss.com/book](). 
 *In SMACSS terms, reset + typography + elements = "Base" styles*
 
-Styles are broken down into the following groups:
-
-- Reset
-- Typography
-- Elements
-- Layout
-- Module
-- State
-- Colo(u)r
+Styles are broken down into the following groups: **Reset, Typography, Elements, Layout, Module, State, Colo(u)r**
 
 
 ## Changelog
