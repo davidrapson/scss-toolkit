@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
   SCSS TOOLKIT by DAVID RAPSON
-  Starter toolkit for Sass (SCSS) projects.
+  Starter toolkit for SCSS projects.
 */
 
 // Plugins
@@ -21,17 +21,8 @@
 // Uses a combination of recommendations from Adaptive Web Design, http://easy-readers.net/
 // and Scalable and Modular Architecture for CSS (SMACSS) http://smacss.com/book
 //
-// Styles are defined in the following groupings:
-//
-// - Reset
-// - Typography
-// - Elements
-// - Layout
-// - Module
-// - State
-// - Color
-//
-// In SMACSS terms, reset + typography + elements = "Base" styles
+// Styles are defined in the following groupings: 
+// Reset, Typography, Elements, Layout, Module State, Color
 
 // Base or common styles
 @import "common/reset", "common/typography", "common/elements";
@@ -46,8 +37,8 @@
 //  The @media declaration ensures that every medium gets typography and colour styles,
 //  but only mediums which implement `screen` get the layout styles.
 //
-//  This has the added benefit of being ignored by older browsers (e.g., Netscape 4),
-//  so if for any reasons the site is viewed by legacy browsers they just get basic, but accessible, styling.
+//  This has the added benefit of being ignored by older browsers (I mean *really* old, e.g. Netscape 4),
+//  so if for any reason the site *is* viewed by legacy browsers they just get basic, but accessible, styling.
 
 @media screen {
 
@@ -55,8 +46,11 @@
 
 }
 
-// @import "common/color"; // <- You'll want to set your color scheme variables and adjust the values in this file before including it.
-
+// Media queries
 @import "media/respond";
-@import "common/helpers"; // <- Should come last out of screen styles (but before @media print)
+
+Helpers should come last out of screen styles
+@import "common/helpers";
+
+// Print styles
 @import "media/print";
