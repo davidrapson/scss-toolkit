@@ -11,9 +11,10 @@ Styles are broken down into the following groups: **Reset, Typography, Elements,
 
 ## Changelog
 
-Aside from the naughty **0.4.5** tag this project attempts to adhere to the [Semantic Versioning Specification](http://semver.org/) as much as possible.
+This project attempts to adhere to the [Semantic Versioning Specification](http://semver.org/) as much as possible.
 
-- **0.7.0** Made Compass optional
+- **0.8.0 Colour style merged into main styles. **
+- 0.7.0 Made Compass optional
 - 0.6.1 Moved `@media screen` declaration into main style.scss
 - 0.6.0 Added default form styles from HTML5 Boilerplate
 - 0.5.1 Demo moved to a separate Github repo
@@ -53,8 +54,7 @@ The demo files now live in a [separate github repo](https://github.com/davidraps
             ├── _functions.scss           Sass mixins, current only `relative-size`
             ├── _mixins.scss              Sass mixins (empty file)
             ├── _variables.scss           Variables, color scheme and font stacks
-            ├── common                    [dir]
-            │   ├── _color.scss           All color definitions
+            ├── common                    [dir]å
             │   ├── _elements.scss        Basic element styles, e.g., text level, tables, forms
             │   ├── _helpers.scss         Non-semantic helpers, e.g., clearfix etc. (from HTML5 Boilerplate)
             │   ├── _reset.scss           Reset styles (based on Normalise.css + H5BP)
@@ -88,3 +88,4 @@ This toolkit is based on the work of the following fine people & projects.
 - [Normalise.css](http://necolas.github.com/normalize.css/)
 - [Scalable and Modular Architecture for CSS](http://smacss.com/book/type-state) (<abbr title="Scalable and Modular Architecture for CSS">SMACSS</abbr>)
 - [Adaptive Web Design (book)](http://easy-readers.net/)
+- [Ben Bodien](http://neutroncreations.com/) for his advice and feedback.
