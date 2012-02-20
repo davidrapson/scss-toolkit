@@ -14,16 +14,17 @@
     background: transparent;
   }
   a:link {
+    color: $link-default-color;
     text-decoration: none;
-    border-bottom: 1px solid;
   }
 
-  a:visited   {  }
-  a:hover     { border: none; }
-  a:active    {  }
+  a:visited   { color: $link-visited-color; }
+  a:hover     { color: $link-hover-color;   }
+  a:active    { color: $link-active-color;  }
   a:focus     { outline: thin dotted; }
   a:hover,
   a:active    { outline: 0; }
+
 
   /*= @group Text Level Elements
   ---------------------------------------------------------------------- */
@@ -43,6 +44,8 @@
   nav ul, nav ol        { list-style: none; }
 
   /* Text Marking */
+  
+  ins, mark     { background-color: $highlight-color; }
   ins           { text-decoration: none; }
   mark          { font-style: italic; font-weight: bold; }
   del           { text-decoration: line-through; }
@@ -91,14 +94,17 @@
 
   code  {
     padding: 0 0.2em;
+    color: $code-color;
+    background-color: $code-background-color;
   }
   pre, .code {
+    color: $pre-color;
+    background-color: $pre-background-color;
     margin-bottom: relative-size(21,16);
     padding: 1em relative-size(21,16);
   }
   pre code, .code code { background-color: transparent; border: none; padding: 0; }
   .code li { list-style-type: decimal-leading-zero; }
-
 
   /*= @group TABLES
   ---------------------------------------------------------------------- */
