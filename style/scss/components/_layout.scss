@@ -1,2 +1,31 @@
 /*= @group Layout
 ---------------------------------------------------------------------- */
+
+  /*= @group Common
+  ---------------------------------------------------------------------- */
+
+  // Example layout class
+  //.l-constrained {
+  // width: 90%;
+  //margin: 0 auto;
+  //}
+  
+  body {
+    color: $text-color;
+    background-color: $background-color;
+  }
+  
+  [role="banner"] {
+    
+  }
+  
+  [role="main"] {
+    
+    
+  }
+  
+  [role="contentinfo"] {
+    
+    
+  }
+  
