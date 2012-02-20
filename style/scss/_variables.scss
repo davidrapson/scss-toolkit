@@ -1,41 +1,50 @@
 // Variables
 
-// Colour scheme. n.b., to avoid confusion with CSS properties,
+// Colour Scheme 
+// =============
+// N.B., to avoid confusion with CSS properties,
 // colour scheme variables use american english 'color'
 
 // Common Colours
-$text-color                 : #242424;
-$background-color           : #fefefe;
+$text-color                   : #242424;
+$background-color             : #fefefe;
 
-$link-default-color         : #242424;
-$link-visited-color         : #444;
-$link-hover-color           : pink;
-$link-active-color          : yellow;
+$link-default-color           : #242424;
+$link-visited-color           : #444;
+$link-hover-color             : pink;
+$link-active-color            : yellow;
 
-$code-color                 : #333;
-$code-background-color      : #f3f3f3;
-$pre-color                  : #d4d4d4;
-$pre-background-color       : #333;
+$code-color                   : #333;
+$code-background-color        : #f3f3f3;
+$pre-color                    : #d4d4d4;
+$pre-background-color         : #333;
 
+$selection-color              : white;
+$selection-background-color   : green;
+$tap-highlight-color          : rgb(0,0,0);
 
-$selection-color            : white;
-$selection-background-color : green;
-$tap-highlight-color        : rgb(0,0,0);
+// The following are just suggestions,
+// use whatever works for your project.
 
-$success-color              : green;
-$error-color                : #f0dddd;
-
-// Just some suggestions
 // Main Colour Palette
-//$primary-color              : #2b306a;
-//$secondary-color            : #fef;
-//$muted-color                : #eef;
-//$highlight-color            : #ff9600;
-//$note-color                 : #666;
+$primary-color                : #2b306a;
+$secondary-color              : #fef;
+$muted-color                  : #eef;
+$highlight-color              : #ff9600;
+$note-color                   : #666;
 
-// Font stacks
-$display-family    : "Helvetica Neue", Helvetica, Arial, sans-serif; // Headings
-$caption-family    : verdana, sans-serif; // Small text, notes, captions etc.
-$sans-family       : verdana, sans-serif; // Generic sans-serif family
-$serif-family      : georgia, serif; // Generic serif family
-$monospace-family  : "Menlo", "Bitstream Vera Sans", Monaco, "Andale Mono", "Lucida Console", "Droid Mono", monospace; // Monospace, code samples etc.
+// Messages
+$message-color                : #f4ecbb;
+$success-color                : #2cde2c;
+$warning-color                : #cf8600;
+$important-color              : #d00;
+$notice-color                 : #66b;
+
+
+// Font Stacks
+// ===========
+$display-family               : "Helvetica Neue", Helvetica, Arial, sans-serif;
+$caption-family               : verdana, sans-serif;
+$sans-family                  : verdana, sans-serif;
+$serif-family                 : georgia, serif;
+$monospace-family             : "Menlo", "Bitstream Vera Sans", Monaco, "Andale Mono", "Lucida Console", "Droid Mono", monospace;
