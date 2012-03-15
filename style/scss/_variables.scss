@@ -1,11 +1,11 @@
 // Variables
 
-// Colour Scheme 
+// Colour Scheme
 // =============
-// N.B., to avoid confusion with CSS properties,
-// colour scheme variables use american english 'color'
+// To avoid confusion with CSS properties,
+// colour scheme variable names use american english _color_
 
-// Common Colours
+// Common colours
 $text-color                   : #242424;
 $background-color             : #fefefe;
 
@@ -23,10 +23,9 @@ $selection-color              : white;
 $selection-background-color   : green;
 $tap-highlight-color          : rgb(0,0,0);
 
-// The following are just suggestions,
-// use whatever works for your project.
+// These are just suggestions, use whatever works for your project.
 
-// Main Colour Palette
+// Main colour palette
 $primary-color                : #2b306a;
 $secondary-color              : #fef;
 $muted-color                  : #eef;

@@ -1,4 +1,4 @@
-/*= @group ELEMENTS
+/*= @group Elements
 ---------------------------------------------------------------------- */
 // Element styles based on HTML5 Boilerplate
 
@@ -16,7 +16,7 @@
   }
   a:link {
     color: $link-default-color;
-    text-decoration: none; 
+    text-decoration: none;
   }
 
   a:visited   { color: $link-visited-color; }
@@ -45,7 +45,7 @@
   nav ul, nav ol        { list-style: none; }
 
   /* Text Marking */
-  
+
   ins, mark     { background-color: $highlight-color; }
   ins           { text-decoration: none; }
   mark          { font-style: italic; font-weight: bold; }
@@ -71,13 +71,13 @@
   /* Correct overflow displayed oddly in IE9 */
   svg:not(:root) { overflow: hidden; }
 
-  /*= @group FIGURES
+  /*= @group Figures
   ---------------------------------------------------------------------- */
 
   figure { margin: 0; }
   figcaption { font-style: italic; }
 
-  /*= @group QUOTES
+  /*= @group Quotes
   ---------------------------------------------------------------------- */
 
   q { quotes: none; }
@@ -88,7 +88,7 @@
 
   }
 
-  /*= @group CODE
+  /*= @group Code
   ---------------------------------------------------------------------- */
 
   pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
@@ -107,14 +107,13 @@
   pre code, .code code { background-color: transparent; border: none; padding: 0; }
   .code li { list-style-type: decimal-leading-zero; }
 
-  /*= @group TABLES
+  /*= @group Tables
   ---------------------------------------------------------------------- */
 
   table { border-collapse: collapse; border-spacing: 0; }
   td { vertical-align: top; }
 
-
-  /*= @group FORMS
+  /*= @group Forms
   ---------------------------------------------------------------------- */
   // From HTML5 Boilerplate
 
@@ -135,7 +134,6 @@
 
   // 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
   button, input { line-height: normal; }
-
 
   // 1. Display hand cursor for clickable form elements
   // 2. Allow styling of clickable form elements in iOS
