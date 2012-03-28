@@ -13,7 +13,8 @@ Styles are broken down into the following groups: **Reset, Typography, Elements,
 
 This project attempts to adhere to the [Semantic Versioning Specification](http://semver.org/) as much as possible.
 
-- **0.8.0 Colour style merged into main styles. **
+- **0.8.1** Minor bugfix, borked comment stopping styles from compiling
+- 0.8.0 Colour style merged into main styles.
 - 0.7.0 Made Compass optional
 - 0.6.1 Moved `@media screen` declaration into main style.scss
 - 0.6.0 Added default form styles from HTML5 Boilerplate
