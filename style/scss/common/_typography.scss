@@ -3,7 +3,7 @@
 
 /* Default context. This is ~= 16px over 21px line-height  */
 /* Change these values to suit your chosen typefaces */
-body { font: 100% / 1.3125 sans-serif; }
+body { font: #{$base-fs/16*100}%/($base-lh/$base-fs) sans-serif; }
 
   /*= @group FONT STACKS
   ---------------------------------------------------------------------- */
@@ -34,8 +34,9 @@ body { font: 100% / 1.3125 sans-serif; }
   h1,h2,h3 { text-rendering: optimizeLegibility; }
 
   /* Font weights and variants */
-  h1, h2, h3, h4, h5, h6  { font-style: normal; }
+  h1, h2, h3, h4, h5, h6  { font-style: normal; color: $primary-color; }
   h1, h2, h3              { font-weight: 600; }
+  h4, h5, h6              { font-weight: 400; }
   h5                      { text-transform: uppercase; }
   h6                      { font-style: italic; }
 
@@ -54,22 +55,22 @@ body { font: 100% / 1.3125 sans-serif; }
   // Margin: relative-size(21,28) where 21 is our desired line-height and 28 is the font-size of our containing element (in this case the <h2>)
 
   h1 {
-    font-size: relative-size(28,16);
+    font-size: relative-size(28,$base-fs);
     margin: 0 0 relative-size(21,28) 0;
   }
   h2 {
-    font-size: relative-size(21,16);
+    font-size: relative-size(21,$base-fs);
     margin: relative-size(21,21) 0 relative-size(7,21) 0;
   }
   h3 {
-    font-size: relative-size(18,16);
+    font-size: relative-size(18,$base-fs);
     margin: relative-size(21,18) 0 relative-size(7,18) 0;
   }
   h4 {
-    font-size: relative-size(17,16);
+    font-size: relative-size(17,$base-fs);
     margin: relative-size(21,17) 0 relative-size(7,17) 0;
   }
   h5, h6 {
-    font-size: relative-size(14,16);
-    margin: relative-size(21,16) 0 relative-size(7,16) 0;
+    font-size: relative-size(14,$base-fs);
+    margin: relative-size(21,14) 0 relative-size(7,14) 0;
   }

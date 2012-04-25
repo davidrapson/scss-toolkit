@@ -34,9 +34,9 @@
   p { margin: 0 0 relative-size(16,16) 0; }
 
   /* Lists */
-  ul, ol, dl            { margin: 0 0 relative-size(21,16); padding: 0; }
+  ul, ol, dl            { margin: 0 0 relative-size($base-lh,$base-fs); padding: 0; }
   ul ul, ol ol, dl dl   { margin-bottom: 0; }
-  ul li, ol li          { margin-left: relative-size(21,16); }
+  ul li, ol li          { margin-left: relative-size($base-lh,$base-fs); }
   ul li                 { list-style: disc outside; }
   ol li                 { list-style: outside decimal; }
   ul li ul              { margin: 0.5em 0 0 1em; }
@@ -52,7 +52,7 @@
   del           { text-decoration: line-through; }
   b, strong     { font-weight: bold; }
 
-  abbr { text-transform: lowercase; font-variant: small-caps; font-size: relative-size(21,16); }
+  abbr { text-transform: lowercase; font-variant: small-caps; font-size: relative-size($base-lh,$base-fs); }
   abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
 
   /* Position subscript and superscript content without affecting line-height: h5bp.com/k */
@@ -101,8 +101,8 @@
   pre, .code {
     color: $pre-color;
     background-color: $pre-background-color;
-    margin-bottom: relative-size(21,16);
-    padding: 1em relative-size(21,16);
+    margin-bottom: relative-size($base-lh,$base-fs);
+    padding: 1em relative-size($base-lh,$base-fs);
   }
   pre code, .code code { background-color: transparent; border: none; padding: 0; }
   .code li { list-style-type: decimal-leading-zero; }
