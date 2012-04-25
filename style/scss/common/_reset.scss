@@ -20,10 +20,10 @@ body { margin: 0; }
 
 /* Selections */
 /* Must be declared separately */
-@each $prefix in "::-moz-selection", "::selection" { 
-  #{$prefix} { 
+@each $prefix in "::-moz-selection", "::selection" {
+  #{$prefix} {
     text-shadow: none;
     color: $selection-color;
     background: $selection-background-color;
-  } 
+  }
 }

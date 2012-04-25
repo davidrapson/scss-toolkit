@@ -5,6 +5,15 @@
 // To avoid confusion with CSS properties,
 // colour scheme variable names use american english _color_
 
+
+// These are just suggestions, use whatever works for your project.
+// Main colour palette
+$primary-color                : #2b306a;
+$secondary-color              : #fef;
+$muted-color                  : #eef;
+$highlight-color              : #ff9600;
+$note-color                   : #666;
+
 // Common colours
 $text-color                   : #242424;
 $background-color             : #fefefe;
@@ -23,15 +32,6 @@ $selection-color              : white;
 $selection-background-color   : green;
 $tap-highlight-color          : rgb(0,0,0);
 
-// These are just suggestions, use whatever works for your project.
-
-// Main colour palette
-$primary-color                : #2b306a;
-$secondary-color              : #fef;
-$muted-color                  : #eef;
-$highlight-color              : #ff9600;
-$note-color                   : #666;
-
 // Messages
 $message-color                : #f4ecbb;
 $success-color                : #2cde2c;
@@ -42,6 +42,10 @@ $notice-color                 : #66b;
 
 // Font Stacks
 // ===========
+
+$base-fs                      : 16; // Base font-size
+$base-lh                      : 24; // Base line-height
+
 $display-family               : "Helvetica Neue", Helvetica, Arial, sans-serif;
 $caption-family               : verdana, sans-serif;
 $sans-family                  : verdana, sans-serif;
