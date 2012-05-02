@@ -13,7 +13,8 @@ Styles are broken down into the following groups: **Reset, Typography, Elements,
 
 This project attempts to adhere to the [Semantic Versioning Specification](http://semver.org/) as much as possible.
 
-- **0.9.1** Reset styles in sync with HTML5 Boilerplate 3. Including removal of hot pink. 
+- **0.9.2** relative-size function now uses $base-fs as a default value for $context so it can be used with a single argument
+- 0.9.1 Reset styles in sync with HTML5 Boilerplate 3. Including removal of hot pink. 
 - 0.9.0 Added base font-size and line-height variables to help when defining a baseline rhythm
 - 0.8.1 Minor bugfix, borked comment stopping styles from compiling
 - 0.8.0 Colour style merged into main styles.
