@@ -1,9 +1,8 @@
 *.orig
+*.sublime-*
 .*.sw*
 .DS_Store
 .sass-cache
-demo.html
+logs/
 Rakefile
 style/style.css
-demo/
-logs/
