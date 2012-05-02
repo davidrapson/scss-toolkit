@@ -3,7 +3,7 @@
 Personal starter toolkit for Sass (SCSS) & Compass projects.
 
 SCSS Toolkit uses a combination of recommendations from Adaptive Web Design, http://easy-readers.net/
-and Scalable and Modular Architecture for CSS (SMACSS, pronounced “smacks”), see [http://smacss.com/book](). 
+and Scalable and Modular Architecture for CSS (SMACSS, pronounced “smacks”), see [http://smacss.com/book]().
 *In SMACSS terms, reset + typography + elements = "Base" styles*
 
 Styles are broken down into the following groups: **Reset, Typography, Elements, Layout, Module, State, Colo(u)r**
@@ -15,7 +15,7 @@ This project attempts to adhere to the [Semantic Versioning Specification](http:
 
 - **0.9.3** Don't wrap layout styles in @media screen { } call. Causes issues with inline media queries.
 - 0.9.2 relative-size function now uses $base-fs as a default value for $context so it can be used with a single argument
-- 0.9.1 Reset styles in sync with HTML5 Boilerplate 3. Including removal of hot pink. 
+- 0.9.1 Reset styles in sync with HTML5 Boilerplate 3. Including removal of hot pink.
 - 0.9.0 Added base font-size and line-height variables to help when defining a baseline rhythm
 - 0.8.1 Minor bugfix, borked comment stopping styles from compiling
 - 0.8.0 Colour style merged into main styles.
@@ -32,7 +32,7 @@ This project attempts to adhere to the [Semantic Versioning Specification](http:
 
 ## Requirements
 
-As this is a Sass / SCSS toolkit it assumes you already have Ruby and [Sass](http://sass-lang.com/) setup. 
+As this is a Sass / SCSS toolkit it assumes you already have Ruby and [Sass](http://sass-lang.com/) setup.
 
 ### Compass
 
@@ -59,7 +59,7 @@ The demo files now live in a [separate github repo](https://github.com/davidraps
             ├── _functions.scss           Sass mixins, current only `relative-size`
             ├── _mixins.scss              Sass mixins (empty file)
             ├── _variables.scss           Variables, color scheme and font stacks
-            ├── common                    [dir]å
+            ├── common                    [dir]
             │   ├── _elements.scss        Basic element styles, e.g., text level, tables, forms
             │   ├── _helpers.scss         Non-semantic helpers, e.g., clearfix etc. (from HTML5 Boilerplate)
             │   ├── _reset.scss           Reset styles (based on Normalise.css + H5BP)
@@ -72,7 +72,7 @@ The demo files now live in a [separate github repo](https://github.com/davidraps
             │   ├── _print.scss           Print styles
             │   └── _respond.scss         @media, responsive / adaptive styles (empty file)
             └── style.scss                Primary stylesheet, contains all `@import`s.
-    
+
     5 directories, 16 files
 
 ## License
