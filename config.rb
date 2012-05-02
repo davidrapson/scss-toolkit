@@ -22,6 +22,9 @@ sass_dir          = "style/scss"
 images_dir        = "img"
 relative_assets   = true
 
+# Disable query vars image.png?1234 when using asset helpers, e.g., image-url()
+asset_cache_buster  :none
+
 # Defaults to false in production mode, true in development mode.
 line_comments     = false
 
