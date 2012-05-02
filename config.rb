@@ -28,6 +28,9 @@ asset_cache_buster  :none
 # Defaults to false in production mode, true in development mode.
 line_comments     = false
 
+# Uncomment this line if you want to debug using FireSass
+# sass_options = {:debug_info => true}
+
 # Choose your output style, :nested, :extended, :compact, :compressed
 output_style = (environment == :production) ? :compressed : :expanded
 # To call: compass compile -e production --force
