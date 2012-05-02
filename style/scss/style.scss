@@ -26,18 +26,11 @@
 @import "common/reset", "common/typography", "common/elements";
 
 // Layout
-//   Layout = major components, e.g., header, footer etc.
-//   Module = minor components, e.g., navigation bar, callout, widgets etc.
-//   State  = a state is something that augments + overrides all other styles, e.g., success or error state
-//
-//  The @media declaration ensures that every medium gets typography and colour styles,
-//  but only mediums which implement `screen` get the layout styles.
-//
-//  This has the added benefit of being ignored by older browsers (I mean *really* old, e.g. Netscape 4),
-//  so if for any reason the site *is* viewed by legacy browsers they just get basic, but accessible, styling.
-//  - from Adaptive Web Design, http://easy-readers.net/
+// Layout = major components, e.g., header, footer etc.
+// Module = minor components, e.g., navigation bar, callout, widgets etc.
+// State  = a state is something that augments + overrides all other styles, e.g., success or error state
 
-@media screen {  @import "components/layout", "components/module", "components/state"; }
+@import "components/layout", "components/module", "components/state";
 
 // Media queries
 @import "media/respond";
