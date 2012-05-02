@@ -1,14 +1,10 @@
 /*= @group TYPOGRAPHY
 ---------------------------------------------------------------------- */
 
-/* Default context. This is ~= 16px over 21px line-height  */
-/* Change these values to suit your chosen typefaces */
 body { font: #{$base-fs/16*100}%/($base-lh/$base-fs) sans-serif; }
 
   /*= @group FONT STACKS
   ---------------------------------------------------------------------- */
-  // Variables defined in _base.scss
-
 
   /* Default font stack */
   body, select, input, textarea, button { font-family: $sans-family; }
@@ -16,7 +12,7 @@ body { font: #{$base-fs/16*100}%/($base-lh/$base-fs) sans-serif; }
   /* Display font stack */
   h1,h2,h3,h4,h5,h6 { font-family: $display-family; }
 
-  /* Alternate font stack (e.g., if using mainly sans-serif, maybe use a serif) */
+  /* Alternate font stack */
   blockquote, figcaption { font-family: $serif-family;  }
 
   // /* Caption font stack, should be suitable for smaller sizes */
@@ -29,16 +25,10 @@ body { font: #{$base-fs/16*100}%/($base-lh/$base-fs) sans-serif; }
   /*= @group TYPOGRAPHIC HEIRACHY
   ---------------------------------------------------------------------- */
 
-  /* optimizeLegibility for main headings only */
-  /* Consider: http://www.aestheticallyloyal.com/public/optimize-legibility/ */
-  h1,h2,h3 { text-rendering: optimizeLegibility; }
-
   /* Font weights and variants */
-  h1, h2, h3, h4, h5, h6  { font-style: normal; color: $primary-color; }
+  h1, h2, h3, h4, h5, h6  { font-style: normal; }
   h1, h2, h3              { font-weight: 600; }
   h4, h5, h6              { font-weight: 400; }
-  h5                      { text-transform: uppercase; }
-  h6                      { font-style: italic; }
 
   // Desired font-size ÷ font-size of containing element, or more succinctly:
   // target ÷ context = result
@@ -55,22 +45,22 @@ body { font: #{$base-fs/16*100}%/($base-lh/$base-fs) sans-serif; }
   // Margin: relative-size(21,28) where 21 is our desired line-height and 28 is the font-size of our containing element (in this case the <h2>)
 
   h1 {
-    font-size: relative-size(28,$base-fs);
+    font-size: relative-size(32);
     margin: 0 0 relative-size(21,28) 0;
   }
   h2 {
-    font-size: relative-size(21,$base-fs);
+    font-size: relative-size(24);
     margin: relative-size(21,21) 0 relative-size(7,21) 0;
   }
   h3 {
-    font-size: relative-size(18,$base-fs);
+    font-size: relative-size(21);
     margin: relative-size(21,18) 0 relative-size(7,18) 0;
   }
   h4 {
-    font-size: relative-size(17,$base-fs);
+    font-size: relative-size(18);
     margin: relative-size(21,17) 0 relative-size(7,17) 0;
   }
   h5, h6 {
-    font-size: relative-size(14,$base-fs);
+    font-size: relative-size(16);
     margin: relative-size(21,14) 0 relative-size(7,14) 0;
   }
