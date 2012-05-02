@@ -7,7 +7,7 @@ body { font: #{$base-fs/16*100}%/($base-lh/$base-fs) sans-serif; }
   ---------------------------------------------------------------------- */
 
   /* Default font stack */
-  body, select, input, textarea, button { font-family: $sans-family; }
+  body, select, input, textarea, button { font-family: $default-family; }
 
   /* Display font stack */
   h1,h2,h3,h4,h5,h6 { font-family: $display-family; }

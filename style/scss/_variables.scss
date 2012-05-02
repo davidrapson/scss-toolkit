@@ -44,8 +44,9 @@ $notice-color                 : #66b;
 $base-fs                      : 16; // Base font-size
 $base-lh                      : 24; // Base line-height
 
+$sans-family                  : Verdana, sans-serif;
+$serif-family                 : Georgia, serif;
+$default-family				  : $sans-family;
 $display-family               : "Helvetica Neue", Helvetica, Arial, sans-serif;
-$caption-family               : verdana, sans-serif;
-$sans-family                  : verdana, sans-serif;
-$serif-family                 : georgia, serif;
+$caption-family               : Verdana, sans-serif;
 $monospace-family             : "Menlo", "Bitstream Vera Sans", Monaco, "Andale Mono", "Lucida Console", "Droid Mono", monospace;
