@@ -12,9 +12,7 @@ audio:not([controls]) { display: none; }
 
 html {
   font-size: 100%;
-  overflow-y: scroll;
   @each $prefix in webkit, ms { -#{$prefix}-text-size-adjust: 100%; }
-  -webkit-tap-highlight-color: $tap-highlight-color;
 }
 body { margin: 0; }
 
@@ -23,7 +21,6 @@ body { margin: 0; }
 @each $prefix in "::-moz-selection", "::selection" {
   #{$prefix} {
     text-shadow: none;
-    color: $selection-color;
-    background: $selection-background-color;
+    background: $selection-color;
   }
 }
