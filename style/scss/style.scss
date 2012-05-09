@@ -20,10 +20,10 @@
 // The Styles
 // ==========
 // Styles are defined in the following order & groupings:
-// Reset, Typography, Elements, Layout, Module, State
+// Reset, Elements, Layout, Module, State
 
 // Base or common styles
-@import "common/reset", "common/typography", "common/elements";
+@import "common/reset", "common/elements";
 
 // Layout
 // ======
