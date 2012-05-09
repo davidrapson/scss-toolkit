@@ -10,3 +10,10 @@
   @return #{$target/$context}$unit;
 
 }
+
+// Syntax sugar
+// Define a shorter aliase for the relative size function.
+// It's intended to be used frequently.
+@function rs($target,$context:$base-fs,$unit:em) {
+	@return relative-size($target,$context,$unit);
+}
