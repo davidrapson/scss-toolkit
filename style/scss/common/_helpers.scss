@@ -17,6 +17,18 @@
   .invisible { visibility: hidden; }
 
   // Contain floats: nicolasgallagher.com/micro-clearfix-hack/
-  .group:before, .group:after { content: ""; display: table; }
-  .group:after { clear: both; }
-  .group { zoom: 1; }
+  .group {
+    zoom: 1;
+    
+    &:before, &:after { content: ""; display: table; }
+    
+    &:after { clear: both; }
+    
+    .group-left {
+      float: left;
+    }
+    
+    .group-right {
+      float: right;
+    }
+  }
