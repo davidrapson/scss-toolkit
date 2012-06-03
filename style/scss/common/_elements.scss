@@ -44,55 +44,54 @@
     // Declared: link, visited, hover, active
 
     a {
-      margin: 0;
-      padding: 0;
-      font-size: 100%;
-      word-wrap: break-word;
-      vertical-align: baseline;
-      background: transparent;
-    }
-    a:link {
-      color: $link-default-color;
       text-decoration: none;
+      border-bottom: 1px dotted $link-default-color;
+      word-wrap: break-word;
     }
 
+    a           { color: $link-default-color; }
     a:visited   { color: $link-visited-color; }
     a:hover     { color: $link-hover-color;   }
     a:active    { color: $link-active-color;  }
-    a:focus     { outline: thin dotted; }
-    a:hover,
-    a:active    { outline: 0; }
 
+    a:focus { outline: thin dotted; }
+    a:hover, a:active { outline: 0; }
 
     /*= @group Text Level Elements
     ---------------------------------------------------------------------- */
 
-    /* Paragraphs */
-    p { margin: 0 0 relative-size(16,16) 0; }
+    /* Default margins */
+    p, ul, ol, dl  { margin: 0 0 rs($base-lh) 0; }
 
     /* Lists */
-    ul, ol, dl            { margin: 0 0 relative-size($base-lh,$base-fs); padding: 0; }
+    ul, ol, dl            { padding: 0; }
     ul ul, ol ol, dl dl   { margin-bottom: 0; }
-    ul li, ol li          { margin-left: relative-size($base-lh,$base-fs); }
+    ul li, ol li          { margin-left: rs($base-lh,$base-fs); }
     ul li                 { list-style: disc outside; }
     ol li                 { list-style: outside decimal; }
-    ul li ul              { margin: 0.5em 0 0 1em; }
+    ul li ul              { margin: rs($base-lh/2) 0 0 rs($base-fs); }
     dl dt                 { font-weight: bold; }
-    dl dd                 { margin: 0 0 1em 0; }
-    nav ul, nav ol        { list-style: none; }
+    dl dd                 { margin: 0 0 rs($base-fs) 0; }
+
+    nav ul, nav ol, .nav li, nav ol {
+      list-style: none;
+      list-style-image: none;
+      margin: 0;
+      padding: 0;
+    }
 
     /* Text Marking */
+    ins, mark { color: invert($highlight-color); background-color: $highlight-color; }
+    ins { text-decoration: none; }
+    mark  { font-style: italic; font-weight: bold; }
+    del { text-decoration: line-through; }
+    b, strong { font-weight: bold; }
+    dfn { font-style: italic; }
 
-    ins, mark     { background-color: $highlight-color; }
-    ins           { text-decoration: none; }
-    mark          { font-style: italic; font-weight: bold; }
-    del           { text-decoration: line-through; }
-    b, strong     { font-weight: bold; }
-
-    abbr { text-transform: lowercase; font-variant: small-caps; font-size: relative-size($base-lh,$base-fs); }
     abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+    .initialism { text-transform: uppercase; font-size: 90%; }
 
-    /* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+    // Position subscript and superscript content without affecting line-height: h5bp.com/k
     sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
     sup { top: -0.5em; }
     sub { bottom: -0.25em; }
@@ -108,11 +107,12 @@
   /* Correct overflow displayed oddly in IE9 */
   svg:not(:root) { overflow: hidden; }
 
+
   /*= @group Figures
   ---------------------------------------------------------------------- */
 
   figure { margin: 0; }
-  figcaption { font-style: italic; }
+
 
   /*= @group Quotes
   ---------------------------------------------------------------------- */
