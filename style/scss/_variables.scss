@@ -6,10 +6,11 @@
 // colour scheme variable names use american english _color_
 
 
-// These are just suggestions, use whatever works for your project.
+// These are just suggestions
+
 // Main colour palette
 $primary-color                : #2b306a;
-$secondary-color              : #fef;
+$secondary-color              : #06c0db;
 $muted-color                  : #eef;
 $highlight-color              : #ff9600;
 $note-color                   : #666;
@@ -41,6 +42,13 @@ $notice-color                 : #66b;
 // Font Stacks
 // ===========
 
+$sans-family                  : "PT Sans", sans-serif;
+$serif-family                 : "PT Serif", Georgia, serif;
+$display-family               : "PT Sans Narrow", sans-serif;
+$caption-family               : "PT Sans Caption", Verdana, sans-serif;
+$monospace-family             : "Menlo", "Bitstream Vera Sans", Monaco, "Andale Mono", "Lucida Console", "Droid Mono", monospace;
+
+$default-family               : $serif-family;
 $base-fs                      : 16; // Base font-size
 $base-lh                      : 24; // Base line-height
 
