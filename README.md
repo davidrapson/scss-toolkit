@@ -2,18 +2,27 @@
 
 Personal starter toolkit for Sass (SCSS) & Compass projects.
 
-SCSS Toolkit uses a combination of recommendations from Adaptive Web Design, http://easy-readers.net/
-and Scalable and Modular Architecture for CSS (SMACSS, pronounced “smacks”), see [http://smacss.com/book]().
-*In SMACSS terms, reset + typography + elements = "Base" styles*
+SCSS Toolkit uses a combination of recommendations from:
 
-Styles are broken down into the following groups: **Reset, Typography, Elements, Layout, Module, State, Colo(u)r**
+- [Adaptive Web Design](http://easy-readers.net/)
+- [Scalable and Modular Architecture for CSS](http://smacss.com/) (SMACSS, pronounced “smacks”)
+
+Styles are broken down into the following groups: **Base, Layout, Module, State, Colo(u)r**
+
+## Quick Start
+
+Clone the git repo - `git clone git://github.com/davidrapson/scss-toolkit.git` or [download it](https://github.com/davidrapson/scss-toolkit/zipball/master)
 
 
 ## Changelog
 
-This project attempts to adhere to the [Semantic Versioning Specification](http://semver.org/) as much as possible.
+This project attempts to follow the [Semantic Versioning Specification](http://semver.org/).
 
-- **0.9.3** Don't wrap layout styles in @media screen { } call. Causes issues with inline media queries.
+- **1.0.0** Yay!
+    - Support for Media Queries with IE fallback, based on [http://jakearchibald.github.com/sass-ie/]()
+    - Functions and mixins moved into dedicated directories
+    - Modules moved into a dedicated directory
+- 0.9.3 Don't wrap layout styles in @media screen { } call. Causes issues with inline media queries.
 - 0.9.2 relative-size function now uses $base-fs as a default value for $context so it can be used with a single argument
 - 0.9.1 Reset styles in sync with HTML5 Boilerplate 3. Including removal of hot pink.
 - 0.9.0 Added base font-size and line-height variables to help when defining a baseline rhythm
@@ -37,37 +46,6 @@ As this is a Sass / SCSS toolkit it assumes you already have Ruby and [Sass](htt
 ### Compass
 
 I use [Compass](http://compass-style.org/) for all my projects so I've included a `config.rb` file, but it's completely optional. **SCSS Toolkit does not rely on Compass**.
-
-
-## Quick Start
-
-Clone the git repo - `git clone git://github.com/davidrapson/scss-toolkit.git` or [download it](https://github.com/davidrapson/scss-toolkit/zipball/master)
-
-
-## The Files
-
-    ├── README.md                         You're reading it
-    ├── config.rb                         Compass config file (optional)
-    └── style                             [dir]
-        └── scss                          [dir]
-            ├── _functions.scss           Sass mixins, current only `relative-size`
-            ├── _mixins.scss              Sass mixins (empty file)
-            ├── _variables.scss           Variables, color scheme and font stacks
-            ├── common                    [dir]
-            │   ├── _elements.scss        Basic element styles, e.g., text level, tables, forms
-            │   ├── _helpers.scss         Non-semantic helpers, e.g., clearfix etc. (from HTML5 Boilerplate)
-            │   ├── _reset.scss           Reset styles (based on Normalise.css + H5BP)
-            │   └── _typography.scss      Typographic heirachy, mainly font stacks and heading declarations
-            ├── components                [dir]
-            │   ├── _layout.scss          Major components, e.g., header, footer etc.
-            │   ├── _module.scss          Minor components, e.g., navigation bar, callout, widgets etc.
-            │   └── _state.scss           A state is something that augments + overrides all other styles, e.g., success or error states
-            ├── media                     [dir]
-            │   ├── _print.scss           Print styles
-            │   └── _respond.scss         @media, responsive / adaptive styles (empty file)
-            └── style.scss                Primary stylesheet, contains all `@import`s.
-
-    5 directories, 16 files
 
 ## License
 

@@ -1,64 +1,100 @@
 /*= @group Elements
 ---------------------------------------------------------------------- */
-// Element styles based on HTML5 Boilerplate
+// Based on HTML5 Boilerplate default styles
 
-  /*= @group Links
-  ---------------------------------------------------------------------- */
-  // Declared: link, visited, hover, active
-
-  a {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    word-wrap: break-word;
-    vertical-align: baseline;
-    background: transparent;
-  }
-  a:link {
-    color: $link-default-color;
-    text-decoration: none;
-  }
-
-  a:visited   { color: $link-visited-color; }
-  a:hover     { color: $link-hover-color;   }
-  a:active    { color: $link-active-color;  }
-  a:focus     { outline: thin dotted; }
-  a:hover,
-  a:active    { outline: 0; }
-
-
-  /*= @group Text Level Elements
+  /*= @group Typography
   ---------------------------------------------------------------------- */
 
-  /* Paragraphs */
-  p { margin: 0 0 relative-size(16,16) 0; }
+  body { font: $normal #{$base-fs/16*100}%/($base-lh/$base-fs) sans-serif; }
 
-  /* Lists */
-  ul, ol, dl            { margin: 0 0 relative-size($base-lh,$base-fs); padding: 0; }
-  ul ul, ol ol, dl dl   { margin-bottom: 0; }
-  ul li, ol li          { margin-left: relative-size($base-lh,$base-fs); }
-  ul li                 { list-style: disc outside; }
-  ol li                 { list-style: outside decimal; }
-  ul li ul              { margin: 0.5em 0 0 1em; }
-  dl dt                 { font-weight: bold; }
-  dl dd                 { margin: 0 0 1em 0; }
-  nav ul, nav ol        { list-style: none; }
+    /*= @group Font Stacks
+    ---------------------------------------------------------------------- */
 
-  /* Text Marking */
+    /* Default font stack */
+    body, select, input, textarea, button { font-family: $default-family; }
 
-  ins, mark     { background-color: $highlight-color; }
-  ins           { text-decoration: none; }
-  mark          { font-style: italic; font-weight: bold; }
-  del           { text-decoration: line-through; }
-  b, strong     { font-weight: bold; }
+    /* Display font stack */
+    h1,h2,h3,h4,h5,h6 { font-family: $display-family; }
 
-  abbr { text-transform: lowercase; font-variant: small-caps; font-size: relative-size($base-lh,$base-fs); }
-  abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+    /* Alternate font stack */
+    blockquote, figcaption { font-family: $serif-family;  }
 
-  /* Position subscript and superscript content without affecting line-height: h5bp.com/k */
-  sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-  sup { top: -0.5em; }
-  sub { bottom: -0.25em; }
+    // /* Caption font stack, should be suitable for smaller sizes */
+    // e.g. [role=contentinfo], .caption { font-family: $caption-family; }
+
+    /* Monospace font stack, for code samples and preformatted content */
+    pre, code, kbd, samp { font-family: $monospace-family; }
+
+    /*= @group Headings
+    ---------------------------------------------------------------------- */
+
+    h1, h2, h3, h4, h5, h6  { font-style: normal; }
+    h1, h2, h3              { font-weight: $semibold; }
+    h4, h5, h6              { font-weight: $normal; }
+
+    h1 { font-size: rs(32); margin: 0 0 rs(21,32) 0; }
+    h2 { font-size: rs(28); margin: rs(21,28) 0 rs(7,28) 0; }
+    h3 { font-size: rs(24); margin: rs(21,24) 0 rs(7,24) 0; }
+    h4 { font-size: rs(21); margin: rs(21,21) 0 rs(7,21) 0; }
+    h5 { font-size: rs(18); margin: rs(21,18) 0 rs(7,18) 0; }
+    h5 { font-size: rs(16); margin: rs(21,16) 0 rs(7,16) 0; }
+
+    /*= @group Links
+    ---------------------------------------------------------------------- */
+    // Declared: link, visited, hover, active
+
+    a {
+      text-decoration: none;
+      border-bottom: 1px dotted $link-default-color;
+      word-wrap: break-word;
+    }
+
+    a           { color: $link-default-color; }
+    a:visited   { color: $link-visited-color; }
+    a:hover     { color: $link-hover-color;   }
+    a:active    { color: $link-active-color;  }
+
+    a:focus { outline: thin dotted; }
+    a:hover, a:active { outline: 0; }
+
+    /*= @group Text Level Elements
+    ---------------------------------------------------------------------- */
+
+    /* Default margins */
+    p, ul, ol, dl  { margin: 0 0 rs($base-lh) 0; }
+
+    /* Lists */
+    ul, ol, dl            { padding: 0; }
+    ul ul, ol ol, dl dl   { margin-bottom: 0; }
+    ul li, ol li          { margin-left: rs($base-lh,$base-fs); }
+    ul li                 { list-style: disc outside; }
+    ol li                 { list-style: outside decimal; }
+    ul li ul              { margin: rs($base-lh/2) 0 0 rs($base-fs); }
+    dl dt                 { font-weight: bold; }
+    dl dd                 { margin: 0 0 rs($base-fs) 0; }
+
+    nav ul, nav ol, .nav li, nav ol {
+      list-style: none;
+      list-style-image: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Text Marking */
+    ins, mark { color: invert($highlight-color); background-color: $highlight-color; }
+    ins { text-decoration: none; }
+    mark  { font-style: italic; font-weight: bold; }
+    del { text-decoration: line-through; }
+    b, strong { font-weight: bold; }
+    dfn { font-style: italic; }
+
+    abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+    .initialism { text-transform: uppercase; font-size: 90%; }
+
+    // Position subscript and superscript content without affecting line-height: h5bp.com/k
+    sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+    sup { top: -0.5em; }
+    sub { bottom: -0.25em; }
 
 
   /*= @group Embeded Content
@@ -71,11 +107,12 @@
   /* Correct overflow displayed oddly in IE9 */
   svg:not(:root) { overflow: hidden; }
 
+
   /*= @group Figures
   ---------------------------------------------------------------------- */
 
   figure { margin: 0; }
-  figcaption { font-style: italic; }
+
 
   /*= @group Quotes
   ---------------------------------------------------------------------- */

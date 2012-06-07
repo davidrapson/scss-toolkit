@@ -1,0 +1,35 @@
+/*= @group Example
+---------------------------------------------------------------------- */
+
+  .article-listing {
+
+    > * { @include box-sizing(border-box); }
+
+    .entry-meta {
+      color: $secondary-color;
+      font-family: $sans-family;
+      text-align: right;
+      .updated { font-weight: bold; }
+    }
+    .entry-content { }
+    .entry-title { margin-top: 0; }
+
+    @include respond-min(45em) {
+      .entry-meta {
+        float: left;
+        width: 20%;
+        margin-top: rs(42,$base-fs,rem);
+        padding: 0 rs($base-lh,$base-fs,rem) 0 0;
+      }
+      .entry-content {
+        float: right;
+        width: 80%;
+        padding: 0 0 0 rs($base-lh,$base-fs,rem);
+        border-left: 2px dotted $muted-color;
+      }
+    }
+
+    opacity: 0.8;
+    &:hover { opacity: 1; }
+
+  }
