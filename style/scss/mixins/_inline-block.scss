@@ -1,0 +1,14 @@
+// Inline Block
+// Custom version of http://bit.ly/thoughtbot-bourbon-inline-block
+
+@mixin inline-block($alignment: baseline) {
+  display: inline-block;
+  @if $alignment and $alignment != none {
+    vertical-align: $alignment;
+  }
+  @include old-ie {
+    zoom:1;
+    *display:inline;
+    *vertical-align:auto;
+  }
+}
