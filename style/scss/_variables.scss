@@ -52,9 +52,20 @@ $default-family               : $serif-family;
 $base-fs                      : 16; // Base font-size
 $base-lh                      : 24; // Base line-height
 
-$sans-family                  : Verdana, sans-serif;
-$serif-family                 : Georgia, serif;
-$default-family               : $sans-family;
-$display-family               : "Helvetica Neue", Helvetica, Arial, sans-serif;
-$caption-family               : Verdana, sans-serif;
-$monospace-family             : "Menlo", "Bitstream Vera Sans", Monaco, "Andale Mono", "Lucida Console", "Droid Mono", monospace;
+// Font Weights
+// ============
+
+$light                        : 300;
+$normal                       : 400;
+$semibold                     : 700;
+$bold                         : 900;
+
+// Breakpoints
+// ===========
+// There are no common breakpoints so these are just a suggestion
+// You'll need to define your own breakpoints to suit your design
+
+// $breakpoint-narrow: 30em;
+// $breakpoint-mid: 48em;
+// $breakpoint-wide: 60em;
+// $breakpoint-huge: 100em;
