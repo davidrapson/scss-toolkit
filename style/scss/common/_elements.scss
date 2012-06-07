@@ -5,7 +5,7 @@
   /*= @group Typography
   ---------------------------------------------------------------------- */
 
-  body { font: #{$base-fs/16*100}%/($base-lh/$base-fs) sans-serif; }
+  body { font: $normal #{$base-fs/16*100}%/($base-lh/$base-fs) sans-serif; }
 
     /*= @group Font Stacks
     ---------------------------------------------------------------------- */
@@ -29,8 +29,8 @@
     ---------------------------------------------------------------------- */
 
     h1, h2, h3, h4, h5, h6  { font-style: normal; }
-    h1, h2, h3              { font-weight: 600; }
-    h4, h5, h6              { font-weight: 400; }
+    h1, h2, h3              { font-weight: $semibold; }
+    h4, h5, h6              { font-weight: $normal; }
 
     h1 { font-size: rs(32); margin: 0 0 rs(21,32) 0; }
     h2 { font-size: rs(28); margin: rs(21,28) 0 rs(7,28) 0; }
