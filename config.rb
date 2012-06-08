@@ -33,4 +33,4 @@ line_comments     = false
 
 # Choose your output style, :nested, :extended, :compact, :compressed
 output_style = (environment == :production) ? :compressed : :expanded
-# To call: compass compile -e production --force
+# To call: compass compile -e production -s compressed --force
