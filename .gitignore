@@ -5,5 +5,5 @@
 .sass-cache
 logs/
 Rakefile
-style/style.css
+style/*.css
 index.html

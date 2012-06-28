@@ -1,0 +1,10 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    sass (3.2.0.alpha.247)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  sass (~> 3.2.0.alpha.35)
