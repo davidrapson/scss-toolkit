@@ -5,32 +5,32 @@
   /*= @group Typography
   ---------------------------------------------------------------------- */
 
-  body { font: $normal #{$base-fs/16*100}%/($base-lh/$base-fs) sans-serif; }
+  body { font: $font-weight-normal #{$base-fs/16*100}%/($base-lh/$base-fs) sans-serif; }
 
     /*= @group Font Stacks
     ---------------------------------------------------------------------- */
 
     /* Default font stack */
-    body, select, input, textarea, button { font-family: $default-family; }
+    body, select, input, textarea, button { font-family: $font-family-default; }
 
     /* Display font stack */
-    h1,h2,h3,h4,h5,h6 { font-family: $display-family; }
+    h1,h2,h3,h4,h5,h6 { font-family: $font-family-display; }
 
     /* Alternate font stack */
-    blockquote, figcaption { font-family: $serif-family;  }
+    blockquote, figcaption { font-family: $font-family-serif;  }
 
     // /* Caption font stack, should be suitable for smaller sizes */
-    // e.g. [role=contentinfo], .caption { font-family: $caption-family; }
+    // e.g. [role=contentinfo], .caption { font-family: $font-family-caption; }
 
     /* Monospace font stack, for code samples and preformatted content */
-    pre, code, kbd, samp { font-family: $monospace-family; }
+    pre, code, kbd, samp { font-family: $font-family-monospace; }
 
     /*= @group Headings
     ---------------------------------------------------------------------- */
 
     h1, h2, h3, h4, h5, h6  { font-style: normal; }
-    h1, h2, h3              { font-weight: $semibold; }
-    h4, h5, h6              { font-weight: $normal; }
+    h1, h2, h3              { font-weight: $font-weight-semibold; }
+    h4, h5, h6              { font-weight: $font-weight-normal; }
 
     h1 { font-size: rs(32); margin: 0 0 rs(21,32) 0; }
     h2 { font-size: rs(28); margin: rs(21,28) 0 rs(7,28) 0; }
@@ -45,14 +45,14 @@
 
     a {
       text-decoration: none;
-      border-bottom: 1px dotted $link-default-color;
+      border-bottom: 1px dotted $color-link-default;
       word-wrap: break-word;
     }
 
-    a           { color: $link-default-color; }
-    a:visited   { color: $link-visited-color; }
-    a:hover     { color: $link-hover-color;   }
-    a:active    { color: $link-active-color;  }
+    a           { color: $color-link-default; }
+    a:visited   { color: $color-link-visited; }
+    a:hover     { color: $color-link-hover;   }
+    a:active    { color: $color-link-active;  }
 
     a:focus { outline: thin dotted; }
     a:hover, a:active { outline: 0; }
@@ -81,7 +81,7 @@
     }
 
     /* Text Marking */
-    ins, mark { color: invert($highlight-color); background-color: $highlight-color; }
+    ins, mark { color: invert($color-highlight); background-color: $color-highlight; }
     ins { text-decoration: none; }
     mark  { font-style: italic; font-weight: bold; }
     del { text-decoration: line-through; }
@@ -132,12 +132,12 @@
 
   code  {
     padding: 0 0.2em;
-    color: $code-color;
-    background-color: $code-background-color;
+    color: $color-code;
+    background-color: $color-code-background;
   }
   pre, .code {
-    color: $pre-color;
-    background-color: $pre-background-color;
+    color: $color-pre;
+    background-color: $color-pre-background;
     margin-bottom: relative-size($base-lh,$base-fs);
     padding: 1em relative-size($base-lh,$base-fs);
   }
