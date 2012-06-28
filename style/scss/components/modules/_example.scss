@@ -6,8 +6,7 @@
     > * { @include box-sizing(border-box); }
 
     .entry-meta {
-      color: $secondary-color;
-      font-family: $sans-family;
+      font-family: $font-family-sans;
       text-align: right;
       .updated { font-weight: bold; }
     }
@@ -25,7 +24,7 @@
         float: right;
         width: 80%;
         padding: 0 0 0 rs($base-lh,$base-fs,rem);
-        border-left: 2px dotted $muted-color;
+        border-left: 2px dotted $color-muted;
       }
     }
 

@@ -21,6 +21,6 @@ body { margin: 0; }
 @each $prefix in "::-moz-selection", "::selection" {
   #{$prefix} {
     text-shadow: none;
-    background: $selection-color;
+    background: $color-selection;
   }
 }
