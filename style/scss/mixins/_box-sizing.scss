@@ -1,0 +1,6 @@
+@mixin box-sizing ($type: border-box) {
+  // content-box | border-box | inherit
+  -webkit-box-sizing: $type;
+     -moz-box-sizing: $type;
+          box-sizing: $type;
+}
