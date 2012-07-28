@@ -6,29 +6,29 @@
     > * { @include box-sizing(border-box); }
 
     .entry-meta {
+      color: $color-secondary;
       font-family: $font-family-sans;
-      text-align: right;
-      .updated { font-weight: bold; }
     }
+
     .entry-content { }
-    .entry-title { margin-top: 0; }
+      .entry-title { margin-top: 0; }
 
     @include respond-min(45em) {
+
       .entry-meta {
         float: left;
         width: 20%;
-        margin-top: rs(42,$base-fs,rem);
+        margin-top: rs($base-fs,$base-fs,rem);
         padding: 0 rs($base-lh,$base-fs,rem) 0 0;
       }
+
       .entry-content {
         float: right;
         width: 80%;
         padding: 0 0 0 rs($base-lh,$base-fs,rem);
         border-left: 2px dotted $color-muted;
       }
-    }
 
-    opacity: 0.8;
-    &:hover { opacity: 1; }
+    }
 
   }
