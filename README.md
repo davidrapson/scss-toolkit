@@ -1,11 +1,11 @@
 # SCSS Toolkit
 
-Personal starter toolkit for Sass (SCSS) & Compass projects.
+A starter toolkit based on SMACSS for Sass (SCSS) projects, with optional support for Compass.
 
 SCSS Toolkit uses a combination of recommendations from:
 
 - [Adaptive Web Design](http://easy-readers.net/)
-- [Scalable and Modular Architecture for CSS](http://smacss.com/) (SMACSS, pronounced “smacks”)
+- [Scalable and Modular Architecture for CSS](http://smacss.com/) (SMACSS)
 
 Styles are broken down into the following groups: **Base, Layout, Module, State, Colo(u)r**
 
