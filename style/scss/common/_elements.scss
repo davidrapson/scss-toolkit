@@ -81,18 +81,31 @@
     }
 
     /* Text Marking */
-    ins, mark { color: invert($color-highlight); background-color: $color-highlight; }
+    b, strong, mark { font-weight: bold; }
+    dfn, mark { font-style: italic; }
+    ins, mark {
+      color: invert($color-highlight);
+      background-color: $color-highlight;
+    }
     ins { text-decoration: none; }
-    mark  { font-style: italic; font-weight: bold; }
     del { text-decoration: line-through; }
-    b, strong { font-weight: bold; }
-    dfn { font-style: italic; }
 
-    abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
-    .initialism { text-transform: uppercase; font-size: 90%; }
+    abbr[title], dfn[title] {
+      cursor: help;
+      border-bottom: 1px dotted;
+    }
+    .initialism {
+      font-size: 90%;
+      text-transform: uppercase;
+    }
 
     // Position subscript and superscript content without affecting line-height: h5bp.com/k
-    sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+    sub, sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
     sup { top: -0.5em; }
     sub { bottom: -0.25em; }
 
@@ -128,21 +141,30 @@
   /*= @group Code
   ---------------------------------------------------------------------- */
 
-  pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
-
+  pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
   code  {
-    padding: 0 0.2em;
+    padding: 0 .2em;
     color: $color-code;
     background-color: $color-code-background;
   }
   pre, .code {
     color: $color-pre;
     background-color: $color-pre-background;
-    margin-bottom: relative-size($base-lh,$base-fs);
-    padding: 1em relative-size($base-lh,$base-fs);
+    margin-bottom: relative-size($base-lh);
+    padding: 1em relative-size($base-lh);
   }
-  pre code, .code code { background-color: transparent; border: none; padding: 0; }
-  .code li { list-style-type: decimal-leading-zero; }
+  pre code, .code code {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  .code li {
+    list-style-type: decimal-leading-zero;
+  }
 
   /*= @group Tables
   ---------------------------------------------------------------------- */

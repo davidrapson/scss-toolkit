@@ -1,11 +1,11 @@
 # SCSS Toolkit
 
-Personal starter toolkit for Sass (SCSS) & Compass projects.
+A starter toolkit based on SMACSS for Sass (SCSS) projects, with optional support for Compass.
 
 SCSS Toolkit uses a combination of recommendations from:
 
 - [Adaptive Web Design](http://easy-readers.net/)
-- [Scalable and Modular Architecture for CSS](http://smacss.com/) (SMACSS, pronounced “smacks”)
+- [Scalable and Modular Architecture for CSS](http://smacss.com/) (SMACSS)
 
 Styles are broken down into the following groups: **Base, Layout, Module, State, Colo(u)r**
 
@@ -28,7 +28,10 @@ I use [Compass](http://compass-style.org/) for all my projects so I've included 
 
 This project attempts to follow the [Semantic Versioning Specification](http://semver.org/).
 
-- **1.1.1** - Fix load path error in ie.scss
+- **1.2.0**
+    - Add more common colour scheme variables
+    - Rename style.css to main.css to match HTML5 Boilerplate
+- 1.1.1 - Fix load path error in ie.scss
 - 1.1.0
     - Standardise variable names
     - Added Gemfile, .editorconfig and watch.sh (sass --watch script)

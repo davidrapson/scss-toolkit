@@ -2,27 +2,56 @@
 ---------------------------------------------------------------------- */
 // Example layout styles, delete me
 
-.l-constrained {
-  width: 85%;
-  max-width: 720px;
-  margin: 0 auto;
-}
+  /*= @group Layout Helpers
+  ---------------------------------------------------------------------- */
 
-body {
-  color: $color-text;
-  background-color: $color-background;
-}
+  .l-constrained {
+    width: 90%;
+    max-width: 720px;
+    margin: 0 auto;
+  }
 
-[role="banner"] {
+  /*= @group Layout Helpers
+  ---------------------------------------------------------------------- */
 
-}
+  body {
+    color: $color-text;
+    background-color: $color-background;
+  }
 
-[role="main"] {
+  /*= @group Banner
+  ---------------------------------------------------------------------- */
 
-  margin-top: 2em;
+  [role="banner"] {
+  }
 
-}
+    /*= @group Branding
+    ---------------------------------------------------------------------- */
 
-[role="contentinfo"] {
+    .branding {
+      @extend .l-constrained;
+      margin-top: rs($base-lh);
 
-}
+      .branding-logo {
+        margin: 0;
+      }
+      .branding-tagline {
+        color: $color-note;
+        font-size: rs(21);
+      }
+    }
+
+  /*= @group Main
+  ---------------------------------------------------------------------- */
+
+  [role="main"] {
+
+  }
+
+  /*= @group Contentinfo
+  ---------------------------------------------------------------------- */
+
+  [role="contentinfo"] {
+    font-size: rs(14,$base-fs);
+    margin-top: rs($base-lh);
+  }
