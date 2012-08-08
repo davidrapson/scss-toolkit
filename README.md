@@ -7,7 +7,7 @@ SCSS Toolkit uses a combination of recommendations from:
 - [Adaptive Web Design](http://easy-readers.net/)
 - [Scalable and Modular Architecture for CSS](http://smacss.com/) (SMACSS)
 
-Styles are broken down into the following groups: **Base, Layout, Module, State, Colo(u)r**
+Styles are broken down into the following groups: **Base, Layout, Module, State**
 
 ## Quick Start
 
@@ -18,7 +18,7 @@ Clone the git repo - `git clone git://github.com/davidrapson/scss-toolkit.git` o
 As this project uses Sass it assumes you already have Ruby and [Sass](http://sass-lang.com/) setup.
 This project requires Sass **3.2 alpha**, you should be able to run `bundle install` in terminal to get everthing setup.
 
-To watch the files for changes, either run `sass --watch style/scss:style` or use `./watch.sh`
+To watch the files for changes, either run `sass --watch style/scss:style` or use the `watch.sh` script.
 
 ### Compass
 
@@ -32,7 +32,7 @@ This project attempts to follow the [Semantic Versioning Specification](http://s
     - Add more common colour scheme variables
     - Rename style.css to main.css to match HTML5 Boilerplate
 - 1.1.1 - Fix load path error in ie.scss
-- 1.1.0
+- --1.1.0--
     - Standardise variable names
     - Added Gemfile, .editorconfig and watch.sh (sass --watch script)
 - 1.0.0 Yay!
@@ -44,7 +44,7 @@ This project attempts to follow the [Semantic Versioning Specification](http://s
 - 0.9.1 Reset styles in sync with HTML5 Boilerplate 3. Including removal of hot pink.
 - 0.9.0 Added base font-size and line-height variables to help when defining a baseline rhythm
 - 0.8.1 Minor bugfix, borked comment stopping styles from compiling
-- 0.8.0 Colour style merged into main styles.
+- --0.8.0 Colour style merged into main styles.--
 - 0.7.0 Made Compass optional
 - 0.6.1 Moved `@media screen` declaration into main style.scss
 - 0.6.0 Added default form styles from HTML5 Boilerplate
