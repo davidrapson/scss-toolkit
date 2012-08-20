@@ -5,13 +5,15 @@
 
 // Based on the relative-size function from Stitch, http://stitchcss.com/
 // To use rems, pass in `rem` as the last parameter
-@function relative-size($target,$context:$base-fs,$unit:em) {
+@function relative-size( $target, $context: $base-fs, $unit: em ) {
+
   @return #{$target/$context}$unit;
+
 }
 
 // Short alias
-@function rs($target,$context:$base-fs,$unit:em) {
+@function rs( $target, $context: $base-fs, $unit: em ) {
 
-  @return relative-size($target,$context,$unit);
+  @return relative-size( $target, $context, $unit );
 
 }
