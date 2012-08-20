@@ -28,7 +28,8 @@ I use [Compass](http://compass-style.org/) for all my projects so I've included 
 
 This project attempts to follow the [Semantic Versioning Specification](http://semver.org/).
 
-- **1.2.0**
+- **1.2.2** - Add a couple of example modules, articles, navigation, and a basic media object implementation.
+- 1.2.0
     - Add more common colour scheme variables
     - Rename style.css to main.css to match HTML5 Boilerplate
 - 1.1.1 - Fix load path error in ie.scss
