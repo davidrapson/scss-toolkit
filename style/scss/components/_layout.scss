@@ -7,11 +7,11 @@
 
   .l-constrained {
     width: 90%;
-    max-width: 720px;
+    max-width: 45em;
     margin: 0 auto;
   }
 
-  /*= @group Layout Helpers
+  /*= @group Common
   ---------------------------------------------------------------------- */
 
   body {
@@ -19,26 +19,27 @@
     background-color: $color-background;
   }
 
-  /*= @group Banner
+  /*= @group Header
   ---------------------------------------------------------------------- */
 
   [role="banner"] {
+
   }
 
     /*= @group Branding
     ---------------------------------------------------------------------- */
+    // Arguably, this should be a module, but it's here just as ane example.
 
     .branding {
       @extend .l-constrained;
       margin-top: rs($base-lh);
-
-      .branding-logo {
-        margin: 0;
-      }
-      .branding-tagline {
-        color: $color-note;
-        font-size: rs(21);
-      }
+    }
+    .branding-logo {
+      margin: 0;
+    }
+    .branding-tagline {
+      color: $color-note;
+      font-size: rs(21);
     }
 
   /*= @group Main
@@ -48,7 +49,7 @@
 
   }
 
-  /*= @group Contentinfo
+  /*= @group Footer
   ---------------------------------------------------------------------- */
 
   [role="contentinfo"] {
