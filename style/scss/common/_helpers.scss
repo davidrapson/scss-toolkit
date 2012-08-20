@@ -1,4 +1,4 @@
-/*= @group Non-semantic helper classes
+/*= @group Helpers
  ---------------------------------------------------------------------- */
 
 // For image replacement
@@ -17,7 +17,7 @@
 .invisible { visibility: hidden; }
 
 // Contain floats: h5bp.com/q
-.clearfix, .group {
+.clearfix, .group, .media, .item {
   &:before, &:after { content: ""; display: table; }
   &:after { clear: both; }
   *zoom: 1;
