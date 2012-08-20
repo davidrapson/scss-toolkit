@@ -1,0 +1,13 @@
+/*= @group Navigation
+---------------------------------------------------------------------- */
+
+.nav {
+  list-style: none;
+  margin-left: 0;
+}
+.nav li {
+  display: inline;
+}
+.nav a {
+  @include inline-block();
+}
