@@ -9,6 +9,15 @@ SCSS Toolkit uses a combination of recommendations from:
 
 Styles are broken down into the following groups: **Base, Layout, Module, State**
 
+## Roadmap
+
+Version 2 is currently in development, updates should include:
+
+* Load Normalize as a standalone component rather than mixed with other styles
+* Simplifying folder structure, partuclarly around functions & mixins (or include sass-globbing)
+* Include more common componets as a starting point
+* Use Grunt for build tasks
+
 ## Quick Start
 
 Clone the git repo - `git clone git://github.com/davidrapson/scss-toolkit.git` or [download it](https://github.com/davidrapson/scss-toolkit/zipball/master)
