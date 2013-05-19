@@ -1,22 +1,22 @@
 @charset "utf-8";
 
-// SCSS Toolkit by David Rapson
-// A starter toolkit for SCSS projects
+// SCSS Toolkit v2.0.0
+// David Rapson
 //
-// The toolkit uses a combination of recommendations from Adaptive Web Design, http://easy-readers.net/
-// and Scalable and Modular Architecture for CSS (SMACSS) http://smacss.com/book
+// A starter toolkit for Sass/SCSS projects
+
 
 // Compass Plugins
 // ===============
 
 // Optional, if you are using Compass
-// @import "compass/utilities", "compass/css3";
-
+@import "compass/utilities", "compass/css3";
 
 // Sass Features
 // =============
 
-@import "variables", "functions/all", "mixins/all";
+@import "variables", "functions", "mixins";
+
 
 // The Styles
 // ==========
@@ -24,7 +24,7 @@
 // Base, Layout, Module, State
 
 // Base styles (reset + elements)
-@import "common/base";
+@import "common/normalize", "common/base";
 
 // Layout
 // ======
@@ -33,9 +33,6 @@
 // - State  = a state is something that augments + overrides all other styles, e.g., success or error state
 
 @import "components/layout", "components/module", "components/state";
-
-// Helpers should come last out of screen styles
-@import "common/helpers";
 
 // Print styles
 @import "print";
