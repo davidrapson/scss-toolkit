@@ -8,10 +8,10 @@
 
     // * { @include box-sizing(border-box); }
 
-    .l-constrained {
+    @mixin l-constrained() {
 
         width: 95%;
-        max-width: 60em;
+        max-width: 720px;
         margin: 0 auto;
 
         @media only screen and (min-width: $breakpoint-narrow) {
@@ -20,14 +20,26 @@
 
     }
 
+    .l-constrained {
+        @include l-constrained();
+    }
 
 /*  ========================================================================== */
 /*  @group Header */
 /*  ========================================================================== */
 
     [role="banner"] {
-
+        background-color: darken( $color-background, 10% );
+        border-bottom: 1px solid darken( $color-background, 15% );
+        padding: 1em 0 1em;
+        margin-bottom: 1.5em;
     }
+        .branding {}
+        .branding-logo {
+            margin: 0;
+            @include font-size( 24 );
+        }
+
 
 /*  ========================================================================== */
 /*  @group Main */
@@ -35,23 +47,9 @@
 
     [role="main"] {
 
-        margin-bottom: 1em;
-
-        @include respond-min($breakpoint-mid) {
-            width: 72.5%;
-            margin-left: 2.5%;
-            float: right;
-        }
-
     }
 
     [role="complementary"] {
-
-        @include respond-min($breakpoint-mid) {
-            margin-right: 2.5;
-            width: 22.5%;
-            float: left;
-        }
 
     }
 
@@ -60,5 +58,12 @@
 /*  ========================================================================== */
 
     [role="contentinfo"] {
+
+      clear: both;
+      @include font-size( 13 );
+      margin-top: 1.5em;
+      margin-bottom: 1em;
+      padding-top: .5em;
+      border-top: 1px solid darken( $color-background, 15% );
 
     }

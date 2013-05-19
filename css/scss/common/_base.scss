@@ -71,6 +71,7 @@
         a {
             text-decoration: none;
             word-wrap: break-word;
+            font-weight: bold;
         }
         a:focus { outline: thin dotted; }
         a:hover, a:active { outline: 0; }
@@ -82,6 +83,7 @@
             color: $color-link-visited;
         }
         a:hover {
+            cursor: pointer;
             color: $color-link-hover;
         }
         a:active {

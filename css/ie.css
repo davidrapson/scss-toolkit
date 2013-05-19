@@ -375,7 +375,7 @@ table {
 /*  ========================================================================== */
 body {
   color: #444444;
-  background-color: #f4f4ff;
+  background-color: white;
 }
 
 /*  ========================================================================== */
@@ -391,22 +391,22 @@ button,
 input,
 select,
 textarea {
-  font-family: "PT Serif", Georgia, serif;
+  font-family: sans-serif;
 }
 
 /* Display font stack */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 /* Alternate font stack */
 blockquote, figcaption {
-  font-family: "PT Serif", Georgia, serif;
+  font-family: Georgia, serif;
 }
 
 /* Caption font stack, should be suitable for smaller sizes */
 [role=contentinfo], .caption {
-  font-family: "PT Sans Caption", Verdana, sans-serif;
+  font-family: Verdana, sans-serif;
 }
 
 /* Monospace font stack, for code samples and preformatted content */
@@ -466,6 +466,7 @@ h5 {
 a {
   text-decoration: none;
   word-wrap: break-word;
+  font-weight: bold;
 }
 
 a:focus {
@@ -477,14 +478,15 @@ a:hover, a:active {
 }
 
 a {
-  color: white;
+  color: black;
 }
 
 a:visited {
-  color: white;
+  color: black;
 }
 
 a:hover {
+  cursor: pointer;
   color: #dddddd;
 }
 
@@ -677,7 +679,7 @@ textarea {
 /*  ========================================================================== */
 .l-constrained {
   width: 95%;
-  max-width: 60em;
+  max-width: 720px;
   margin: 0 auto;
 }
 @media only screen and (min-width: 35em) {
@@ -689,33 +691,48 @@ textarea {
 /*  ========================================================================== */
 /*  @group Header */
 /*  ========================================================================== */
+[role="banner"] {
+  background-color: #e6e6e6;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 1em 0 1em;
+  margin-bottom: 1.5em;
+}
+
+.branding-logo {
+  margin: 0;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
 /*  ========================================================================== */
 /*  @group Main */
 /*  ========================================================================== */
-[role="main"] {
-  margin-bottom: 1em;
-  width: 72.5%;
-  margin-left: 2.5%;
-  float: right;
-}
-
-[role="complementary"] {
-  margin-right: 2.5;
-  width: 22.5%;
-  float: left;
-}
-
 /*  ========================================================================== */
 /*  @group Footer */
 /*  ========================================================================== */
+[role="contentinfo"] {
+  clear: both;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  padding-top: .5em;
+  border-top: 1px solid #d9d9d9;
+}
+
 /*  ========================================================================== */
 /*  @group Modules */
 /*  ========================================================================== */
 /*  ========================================================================== */
 /*  @group Text */
 /*  ========================================================================== */
+.lead {
+  font-size: 120%;
+  line-height: 1.3;
+}
+
 .initialism {
-  font-size: 90%;
+  font-size: 85%;
   text-transform: uppercase;
 }
 
@@ -738,7 +755,7 @@ textarea {
 /*  @group Opt-in Typography */
 /*  ========================================================================== */
 .copy a {
-  border-bottom: 1px dotted white;
+  border-bottom: 1px dotted black;
 }
 
 /*  ========================================================================== */

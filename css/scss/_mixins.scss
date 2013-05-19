@@ -39,6 +39,14 @@ $old-ie: false !default;
   }
 }
 
+
+// Font-size
+// =========
+// rem font-size with px fallback
+@mixin font-size( $value ) {
+  font-size: ( $value ) * 1px;
+  font-size: ( $value / $base-font-size ) * 1rem;
+}
 // Box Sizing
 // ==========
 

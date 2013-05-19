@@ -6,8 +6,13 @@
 /*  @group Text */
 /*  ========================================================================== */
 
+    .lead {
+        font-size: 120%;
+        line-height: 1.3;
+    }
+
     .initialism {
-        font-size: 90%;
+        font-size: 85%;
         text-transform: uppercase;
     }
 

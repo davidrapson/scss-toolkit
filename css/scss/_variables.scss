@@ -15,12 +15,12 @@ $color-note: #666;
 // Common colours
 $color-text: #444;
 $color-text-alt: #fff;
-$color-background: #f4f4ff;
+$color-background: #fff;
 $color-border: #ddd;
 
 // Links
-$color-link-default: #fff;
-$color-link-visited: #fff;
+$color-link-default: #000;
+$color-link-visited: #000;
 $color-link-hover: #ddd;
 $color-link-active: #ddd;
 
@@ -55,13 +55,13 @@ $base-lh: $base-line-height;
 // Font Stacks
 // ===========
 
-$font-family-sans: "PT Sans", sans-serif;
-$font-family-serif: "PT Serif", Georgia, serif;
-$font-family-display: "PT Sans Narrow", sans-serif;
-$font-family-caption: "PT Sans Caption", Verdana, sans-serif;
+$font-family-sans: sans-serif;
+$font-family-serif: Georgia, serif;
+$font-family-display: "Helvetica Neue", sans-serif;
+$font-family-caption: Verdana, sans-serif;
 $font-family-monospace: "Menlo", "Bitstream Vera Sans", Monaco, "Andale Mono", "Lucida Console", "Droid Mono", monospace;
 
-$font-family-default: $font-family-serif;
+$font-family-default: $font-family-sans;
 
 
 // Font Weights
