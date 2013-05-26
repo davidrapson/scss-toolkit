@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+// SCSS Toolkit v2.0.0
+// David Rapson
+//
+// A starter toolkit for Sass/SCSS projects
+
+
+// Compass Plugins
+// ===============
+
+// Optional, if you are using Compass
+@import "compass/utilities", "compass/css3";
+
+// Sass Features
+// =============
+
+@import "variables", "functions", "mixins";
+
+
+// The Styles
+// ==========
+// Styles are defined in the following order & groupings:
+// Base, Layout, Module, State
+
+// Base styles (reset + elements)
+@import "common/normalize", "common/base";
+
+// Layout
+// ======
+// - Layout = major components, e.g., header, footer etc.
+// - Module = minor components, e.g., navigation bar, callout, widgets etc.
+// - State  = a state is something that augments + overrides all other styles, e.g., success or error state
+
+@import "components/layout", "components/module", "components/state";
+
+// Print styles
+@import "print";

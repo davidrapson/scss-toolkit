@@ -1,0 +1,1019 @@
+/* normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*  ========================================================================== */
+/*  @group Base */
+/*  ========================================================================== */
+/*  ========================================================================== */
+/*  @group Global Colors */
+/*  ========================================================================== */
+body {
+  color: #444444;
+  background-color: white;
+}
+
+/*  ========================================================================== */
+/*  @group Font Stacks */
+/*  ========================================================================== */
+body {
+  font: 400 100%/1.5 sans-serif;
+}
+
+/* Default font stack */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/* Display font stack */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* Alternate font stack */
+blockquote, figcaption {
+  font-family: Georgia, serif;
+}
+
+/* Caption font stack, should be suitable for smaller sizes */
+[role=contentinfo], .caption {
+  font-family: Verdana, sans-serif;
+}
+
+/* Monospace font stack, for code samples and preformatted content */
+pre, code, kbd, samp {
+  font-family: "Menlo", "Bitstream Vera Sans", Monaco, "Andale Mono", "Lucida Console", "Droid Mono", monospace;
+}
+
+/*  ========================================================================== */
+/*  @group Typography */
+/*  ========================================================================== */
+/*  @group Headings */
+/*  ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-style: normal;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+h4, h5, h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0 0 0.65625em 0;
+}
+
+h2 {
+  font-size: 1.75em;
+  margin: 0.75em 0 0.25em 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 0.875em 0 0.29167em 0;
+}
+
+h4 {
+  font-size: 1.3125em;
+  margin: 1em 0 0.33333em 0;
+}
+
+h5 {
+  font-size: 1.125em;
+  margin: 1.16667em 0 0.38889em 0;
+}
+
+h5 {
+  font-size: 1em;
+  margin: 1.3125em 0 0.4375em 0;
+}
+
+/*  @group Links */
+/*  ========================================================================== */
+a {
+  text-decoration: none;
+  word-wrap: break-word;
+  font-weight: bold;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #dddddd;
+}
+
+a:active {
+  color: #dddddd;
+}
+
+/*  @group Text Level Elements */
+/*  ========================================================================== */
+/* Default margins */
+p, ul, ol, dl {
+  margin: 0 0 0.75em 0;
+}
+
+/* Lists */
+/* Text Marking */
+b, strong, mark {
+  font-weight: bold;
+}
+
+dfn, mark {
+  font-style: italic;
+}
+
+ins, mark {
+  color: #0069ff;
+  background-color: #ff9600;
+}
+
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  cursor: help;
+  border-bottom: 1px dotted;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #eeeeff;
+  margin: 0.75em 0;
+  padding: 0;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*  @group Embedded Content */
+/*  ========================================================================== */
+img {
+  vertical-align: middle;
+}
+
+/* _width hack is for IE6 and below */
+img, embed, object, video {
+  max-width: 100%;
+  _width: 100%;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+/* Correct overflow displayed oddly in IE9 */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/*  @group Figures */
+/*  ========================================================================== */
+figure {
+  margin: 0;
+}
+
+/*  @group Quotes */
+/*  ========================================================================== */
+q {
+  quotes: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+q, cite, blockquote {
+  font-style: italic;
+}
+
+/*  @group Code */
+/*  ========================================================================== */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+code {
+  padding: 0 .2em;
+  color: #333333;
+  background-color: #f3f3f3;
+}
+
+pre, .code {
+  color: #d4d4d4;
+  background-color: #333333;
+  margin-bottom: 0.75em;
+  padding: 1em 1.5em;
+}
+
+pre code, .code code {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.code li {
+  list-style-type: decimal-leading-zero;
+}
+
+/*  ========================================================================== */
+/*  @group Tables */
+/*  ========================================================================== */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td {
+  vertical-align: top;
+}
+
+/*  ========================================================================== */
+/*  @group Forms */
+/*  ========================================================================== */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/*  ========================================================================== */
+/*  @group Layout */
+/*  ========================================================================== */
+/*  ========================================================================== */
+/*  @group Layout Helpers */
+/*  ========================================================================== */
+.l-constrained {
+  width: 95%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 35em) {
+  .l-constrained {
+    width: 90%;
+  }
+}
+
+/*  ========================================================================== */
+/*  @group Header */
+/*  ========================================================================== */
+[role="banner"] {
+  background-color: #e6e6e6;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 1em 0 1em;
+  margin-bottom: 1.5em;
+}
+
+.branding-logo {
+  margin: 0;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+/*  ========================================================================== */
+/*  @group Main */
+/*  ========================================================================== */
+/*  ========================================================================== */
+/*  @group Footer */
+/*  ========================================================================== */
+[role="contentinfo"] {
+  color: #989898;
+  clear: both;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-size: 0.6875rem;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding-top: .5em;
+  border-top: 1px solid #d9d9d9;
+}
+
+/*  ========================================================================== */
+/*  @group Modules */
+/*  ========================================================================== */
+/*  ========================================================================== */
+/*  @group Text */
+/*  ========================================================================== */
+.lead {
+  font-size: 120%;
+  line-height: 1.3;
+}
+
+.initialism, .caps {
+  font-size: 85%;
+  text-transform: uppercase;
+}
+
+.note, .footnote, .version {
+  color: #666666;
+  font-size: 80%;
+}
+
+.footnote {
+  margin: 1em 0;
+}
+
+.version {
+  font-weight: normal;
+}
+
+.more {
+  font-weight: bold;
+}
+.more::after {
+  content: '\2192';
+  margin-left: .5em;
+}
+
+/*  ========================================================================== */
+/*  @group Opt-in Typography */
+/*  ========================================================================== */
+.copy a {
+  border-bottom: 1px dotted black;
+}
+
+/*  ========================================================================== */
+/*  @group Navigation */
+/*  ========================================================================== */
+.nav, .nav ul,
+nav ul, nav ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav > li, .nav > li > a, .nav ul > li, .nav ul > li > a,
+nav ul > li,
+nav ul > li > a, nav ol > li, nav ol > li > a {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.nav-stacked > li {
+  display: list-item;
+}
+.nav-stacked > li > a {
+  display: block;
+}
+
+.nav-banner {
+  text-align: center;
+}
+
+.nav-inline li::before {
+  color: #666666;
+  content: " | ";
+  margin: 0 .5em 0 .3em;
+}
+.nav-inline li:first-child::before {
+  content: "";
+  margin: 0;
+}
+
+/*  ========================================================================== */
+/*  @group Buttons */
+/*  ========================================================================== */
+.btn {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size: 100%;
+  cursor: pointer;
+  overflow: visible;
+  height: 2em;
+  line-height: 2;
+  padding-right: .75em;
+  padding-left: .75em;
+  color: white;
+  background-color: #2b306a;
+  border-radius: 5%;
+}
+
+.btn,
+.btn:hover,
+.btn:active,
+.btn:focus,
+.btn:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #1c2046;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+}
+
+/*  ========================================================================== */
+/*  @group CTAs */
+/*  ========================================================================== */
+.cta {
+  border: 1px solid #dddddd;
+  background-color: #eeeeff;
+  padding: 1em;
+}
+.cta .note, .cta .footnote, .cta .version {
+  margin-left: .5em;
+}
+
+/*  ========================================================================== */
+/*  @group State (& Helpers) */
+/*  ========================================================================== */
+/*
+* Image replacement
+*/
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+}
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/*
+* Hide from both screenreaders and browsers: h5bp.com/u
+*/
+.hidden,
+.is-hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+* Hide only visually, but have it available for screenreaders: h5bp.com/v
+*
+* .focassable Extends the .visuallyhidden class to allow the element to be focusable
+* when navigated to via the keyboard: h5bp.com/p
+*/
+.visuallyhidden,
+.is-visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus,
+.is-visuallyhidden.focusable:active,
+.is-visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+* Hide visually and from screenreaders, but maintain layout
+*/
+.invisible,
+.is-invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*/
+.group,
+.l-constrained,
+.cf, .clearfix {
+  *zoom: 1;
+}
+.group:before, .group:after,
+.l-constrained:before,
+.l-constrained:after,
+.cf:before,
+.cf:after, .clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.group:after,
+.l-constrained:after,
+.cf:after, .clearfix:after {
+  clear: both;
+}
+
+.clear {
+  clear: both;
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

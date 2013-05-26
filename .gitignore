@@ -1,0 +1,8 @@
+*.orig
+*.sublime-*
+.*.sw*
+.DS_Store
+.sass-cache
+style/*.css
+node_modules
+Gemfile.lock
