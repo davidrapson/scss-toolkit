@@ -1,4 +1,4 @@
-# SCSS Toolkit
+# SCSS Toolkit 2.0.0
 
 A starter toolkit based on SMACSS for Sass (SCSS) projects, with optional support for Compass.
 
@@ -9,39 +9,24 @@ SCSS Toolkit uses a combination of recommendations from:
 
 Styles are broken down into the following groups: **Base, Layout, Module, State**
 
-## Roadmap
+## Requirements
 
-Version 2 is currently in development, updates should include:
-
-* Load Normalize as a standalone component rather than mixed with other styles
-* Simplifying folder structure, partuclarly around functions & mixins (or include sass-globbing)
-* Include more common componets as a starting point
-* Use Grunt for build tasks
+* Ruby, along with the `bundler` gem.
+* NPM (`brew install node`)
+* Grunt CLI (`npm install -g grunt-cli`)
 
 ## Quick Start
 
-Clone the git repo - `git clone git://github.com/davidrapson/scss-toolkit.git` or [download it](https://github.com/davidrapson/scss-toolkit/zipball/master)
+* Clone the git repo - `git clone git://github.com/davidrapson/scss-toolkit.git` or [download it](https://github.com/davidrapson/scss-toolkit/zipball/master)
+* Run `bundle install` at the root of the project
+* Run `npm install` at the root of the project
+* You should be all set.
 
-## Requirements
+## Build tasks
 
-As this project uses Sass it assumes you already have Ruby and [Sass](http://sass-lang.com/) installed.
-This project requires Sass **3.2**, you should be able to run `bundle install` in terminal to get everthing setup.
-
-To watch the files for changes, either run `sass --watch style/scss:style` or use the `watch.sh` script.
-
-### Compass
-
-I use [Compass](http://compass-style.org/) for all my projects so I've included a Compass `config.rb` file, but it's completely optional. **SCSS Toolkit does not rely on Compass**.
-
-## Changelog
-
-This project attempts to follow the [Semantic Versioning Specification](http://semver.org/).
-
-- **1.2.1** - Add a example modules for articles, navigation and media objects.
-- 1.2.0 - Add more common colour scheme variables & rename style.css to main.css to match HTML5 Boilerplate
-- 1.1.1 - Fix load path error in ie.scss
-- 1.1.0 - Standardise variable names & added Gemfile, .editorconfig and watch.sh (sass --watch script)
-- 1.0.0 - Initial release
+* Run `grunt watch` to watch all `.scss` files in `css/scss` for changes.
+* Run `grunt build` to compile the `.scss` files on demand
+* Run `grunt build:production` to compile and minify the `.scss` files on demand into `css/build`.
 
 ## License
 
