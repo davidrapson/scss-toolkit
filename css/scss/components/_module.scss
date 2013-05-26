@@ -1,0 +1,118 @@
+/*  ========================================================================== */
+/*  @group Modules */
+/*  ========================================================================== */
+
+/*  ========================================================================== */
+/*  @group Text */
+/*  ========================================================================== */
+
+    .lead {
+        font-size: 120%;
+        line-height: 1.3;
+    }
+
+    .initialism {
+        font-size: 85%;
+        text-transform: uppercase;
+    }
+
+    .note {
+        color: $color-note;
+        font-style: italic;
+        font-size: 80%;
+        margin-bottom: .5em;
+    }
+
+    .more {
+        font-weight: bold;
+        &::after {
+            content: '\2192';
+            margin-left: .5em;
+        }
+    }
+
+/*  ========================================================================== */
+/*  @group Opt-in Typography */
+/*  ========================================================================== */
+
+    .copy {
+
+        a {
+            border-bottom: 1px dotted $color-link-default;
+        }
+
+    }
+
+/*  ========================================================================== */
+/*  @group Navigation */
+/*  ========================================================================== */
+
+    .nav, .nav ul,
+    nav ul, nav ol {
+
+        list-style: none;
+        margin:0; padding: 0;
+
+        & > li,
+        & > li > a {
+            @include inline-block();
+        }
+
+    }
+
+    .nav-stacked {
+        & > li {
+            display: list-item;
+        }
+        & > li > a {
+            display: block;
+        }
+    }
+
+    .nav-banner {
+        text-align: center;
+    }
+
+    .nav-inline {
+        li::before {
+            color: $color-note;
+            content: " | ";
+            margin: 0 .5em 0 .3em;
+        }
+        li:first-child::before { content: ""; margin: 0; }
+    }
+
+/*  ========================================================================== */
+/*  @group Buttons */
+/*  ========================================================================== */
+
+    .btn {
+
+        @include button();
+
+        height: 2em;
+        line-height: 2;
+        padding-right: .75em;
+        padding-left: .75em;
+
+        color: $color-text-alt;
+        background-color: $color-primary;
+        border-radius: 5%;
+    }
+
+    .btn,
+    .btn:hover,
+    .btn:active,
+    .btn:focus,
+    .btn:visited{
+        color: $color-text-alt;
+        text-decoration: none;
+    }
+    .btn:hover,
+    .btn:active{
+        background-color: darken( $color-primary, 10% );
+    }
+    .btn:active,
+    .btn:focus {
+        outline: none;
+    }
