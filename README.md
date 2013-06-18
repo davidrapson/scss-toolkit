@@ -1,4 +1,4 @@
-# SCSS Toolkit 2.0.0
+# SCSS Toolkit 2.0.1
 
 A starter toolkit based on SMACSS for Sass (SCSS) projects, with optional support for Compass.
 
