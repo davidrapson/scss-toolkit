@@ -10,7 +10,7 @@ preferred_syntax  = :scss # :sass or :scss
 http_path         = "/"
 css_dir           = "css"
 sass_dir          = "css/scss"
-images_dir        = "img"
+images_dir        = "images"
 relative_assets   = true
 
 # Disable query vars image.png?1234 when using asset helpers, e.g., image-url()
