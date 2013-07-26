@@ -4,7 +4,8 @@ This project attempts to follow the [Semantic Versioning Specification](http://s
 
 ## 2.x
 
-- **2.0.0** - v2 rewrite.
+- **2.0.1** - Fix font-stack inheritance issue
+- 2.0.0 - v2 rewrite.
 
 ## 1.x
 
