@@ -1,6 +1,6 @@
 {
   "name": "scss-toolkit",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "SCSS Toolkit - A starter toolkit based on SMACSS for Sass (SCSS) projects, with optional support for Compass.",
   "devDependencies": {
     "grunt": "~0.4.1",
