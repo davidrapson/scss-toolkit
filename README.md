@@ -1,4 +1,4 @@
-# SCSS Toolkit 2.0.2
+# SCSS Toolkit 2.1.0
 
 A starter toolkit based on SMACSS for Sass (SCSS) projects, with optional support for Compass.
 
@@ -32,7 +32,7 @@ Styles are broken down into the following groups: **Base, Layout, Module, State*
 
 ### Major components:
 
-- Normalize.css: Public Domain
+- [Normalise.css](http://necolas.github.com/normalize.css/): Public Domain
 
 ### Everything else:
 
