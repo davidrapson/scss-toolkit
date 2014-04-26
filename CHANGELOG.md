@@ -4,6 +4,9 @@ This project attempts to follow the [Semantic Versioning Specification](http://s
 
 ## 2.x
 
+- 2.1.0
+    - Upgrade to Normalize v3.0.1
+    - Remove inline-block mixin
 - 2.0.2 - Move compass config back to default config.rb
 - 2.0.1 - Fix font-stack inheritance issue
 - 2.0.0 - v2 rewrite.

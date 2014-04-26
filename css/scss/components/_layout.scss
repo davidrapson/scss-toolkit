@@ -6,10 +6,9 @@
 /*  @group Layout Helpers */
 /*  ========================================================================== */
 
-    // * { @include box-sizing(border-box); }
-
     @mixin l-constrained() {
 
+        display: block;
         width: 95%;
         max-width: 720px;
         margin: 0 auto;
