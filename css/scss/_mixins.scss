@@ -5,7 +5,6 @@
 // Media Queries
 // =============
 // @see http://jakearchibald.github.com/sass-ie/
-
 $fix-mqs: false !default;
 @mixin respond-min($width) {
   @if $fix-mqs {
@@ -31,14 +30,12 @@ $fix-mqs: false !default;
     }
   }
 }
-
 $old-ie: false !default;
 @mixin old-ie {
   @if $old-ie {
     @content;
   }
 }
-
 
 // Font-size
 // =========
@@ -47,56 +44,37 @@ $old-ie: false !default;
   font-size: ( $value ) * 1px;
   font-size: ( $value / $base-font-size ) * 1rem;
 }
+
 // Box Sizing
 // ==========
-
 @mixin box-sizing ($type: border-box) {
   // content-box | border-box | inherit
   -webkit-box-sizing: $type;
      -moz-box-sizing: $type;
           box-sizing: $type;
 }
-
-
-// Inline Block
-// ============
-// Custom version of http://bit.ly/thoughtbot-bourbon-inline-block
-
-@mixin inline-block($alignment: baseline) {
-  display: inline-block;
-  @if $alignment and $alignment != none {
-    vertical-align: $alignment;
-  }
-  @include old-ie {
-    zoom:1;
-    *display:inline;
-    *vertical-align:auto;
-  }
+@mixin border-box() {
+    @include box-sizing( border-box );
 }
-
 
 // Box reset
 // =========
 // Reset border, margin, and padding
 @mixin box-reset() {
-
   margin: 0;
   padding: 0;
   border: 0 none;
-
 }
-
 
 // Button
 // ======
 // Base button styles, based on https://github.com/csswizardry/beautons
 @mixin button() {
-
     @include box-reset();
-    @include inline-block( middle );
+    display: inline-block;
+    vertical-align: middle;
     white-space: nowrap;
     font-size: 100%;
     cursor: pointer;
     overflow: visible;
-
 }
