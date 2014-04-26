@@ -11,22 +11,16 @@
         line-height: 1.3;
     }
 
-    .initialism, .caps {
+    .initialism {
         font-size: 85%;
         text-transform: uppercase;
     }
 
     .note {
         color: $color-note;
+        font-style: italic;
         font-size: 80%;
-    }
-    .footnote {
-        @extend .note;
-        margin: 1em 0;
-    }
-    .version {
-        @extend .note;
-        font-weight: normal;
+        margin-bottom: .5em;
     }
 
     .more {
@@ -61,7 +55,8 @@
 
         & > li,
         & > li > a {
-            @include inline-block();
+            display: inline-block;
+            vertical-align: middle;
         }
 
     }
@@ -122,19 +117,3 @@
     .btn:focus {
         outline: none;
     }
-
-/*  ========================================================================== */
-/*  @group CTAs */
-/*  ========================================================================== */
-
-    .cta {
-        border: 1px solid $color-border;
-        background-color: $color-muted;
-        padding: 1em;
-
-        .note {
-            margin-left: .5em;
-        }
-
-    }
-

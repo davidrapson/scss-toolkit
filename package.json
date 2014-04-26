@@ -1,12 +1,19 @@
 {
   "name": "scss-toolkit",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "SCSS Toolkit - A starter toolkit based on SMACSS for Sass (SCSS) projects, with optional support for Compass.",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:davidrapson/scss-toolkit.git"
+  },
+  "author": "David Rapson",
+  "readmeFilename": "README.md",
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-compass": "~0.2.0",
-    "grunt-contrib-watch": "~0.2.0",
-    "grunt-notify": "~0.1.3",
-    "matchdep": "~0.1.2"
+    "grunt": "~0.4.4",
+    "grunt-contrib-compass": "~0.7.2",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-notify": "~0.2.20",
+    "matchdep": "~0.3.0"
   }
 }

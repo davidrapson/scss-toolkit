@@ -4,11 +4,16 @@ This project attempts to follow the [Semantic Versioning Specification](http://s
 
 ## 2.x
 
-- 2.0.0
+- 2.1.0
+    - Upgrade to Normalize v3.0.1
+    - Remove inline-block mixin
+- 2.0.2 - Move compass config back to default config.rb
+- 2.0.1 - Fix font-stack inheritance issue
+- 2.0.0 - v2 rewrite.
 
 ## 1.x
 
-- **1.2.0**
+- 1.2.0
     - Add more common colour scheme variables
     - Rename style.css to main.css to match HTML5 Boilerplate
 - 1.1.1 - Fix load path error in ie.scss

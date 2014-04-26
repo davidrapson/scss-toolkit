@@ -12,9 +12,6 @@ module.exports = function(grunt) {
     sassPath: 'css/scss',
 
     compass: {
-      options: {
-        config: 'config/compass.rb'
-      },
       development: {
         options: {
           outputStyle: 'expanded'

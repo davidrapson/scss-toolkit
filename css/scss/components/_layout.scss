@@ -6,10 +6,9 @@
 /*  @group Layout Helpers */
 /*  ========================================================================== */
 
-    // * { @include box-sizing(border-box); }
-
     @mixin l-constrained() {
 
+        display: block;
         width: 95%;
         max-width: 720px;
         margin: 0 auto;
@@ -59,13 +58,11 @@
 
     [role="contentinfo"] {
 
-        color: lighten($color-text, 33%);
-        clear: both;
-        text-transform: uppercase;
-        @include font-size( 11 );
-        margin-top: 2em;
-        margin-bottom: 1em;
-        padding-top: .5em;
-        border-top: 1px solid darken( $color-background, 15% );
+      clear: both;
+      @include font-size( 13 );
+      margin-top: 1.5em;
+      margin-bottom: 1em;
+      padding-top: .5em;
+      border-top: 1px solid darken( $color-background, 15% );
 
     }
