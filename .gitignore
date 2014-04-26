@@ -3,6 +3,6 @@
 .*.sw*
 .DS_Store
 .sass-cache
-style/*.css
-node_modules
 Gemfile.lock
+node_modules
+style/*.css
