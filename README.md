@@ -1,6 +1,6 @@
 # SCSS Toolkit 2.1.0
 
-## UNMAINTINED
+## UNMAINTAINED
 
 **Note: This project is largely unmaintained. I feel there are still some valuable principles in this repo so can still be taken as a starting point but it unlikely to be updated.**
 
