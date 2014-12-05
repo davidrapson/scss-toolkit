@@ -2,6 +2,11 @@
 
 A starter toolkit based on SMACSS for Sass (SCSS) projects, with optional support for Compass.
 
+
+## UNMAINTINED
+
+**Note: This project is largely unmaintained. I feel there are still some valuable principles in this repo so can still be taken as a starting point but it unlikely to be updated.**
+
 SCSS Toolkit uses a combination of recommendations from:
 
 - [Adaptive Web Design](http://easy-readers.net/)
